@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRAQuickTime",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

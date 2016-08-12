@@ -1,0 +1,3 @@
+accessing
+numberOfQuestionsPerSessionForGroup: aTRASillitoGroup 
+	^ TRASillitoFactory default numberOfQuestionsPerSessionForFamiliarGroup: aTRASillitoGroup

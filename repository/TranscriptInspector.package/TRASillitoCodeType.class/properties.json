@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRASillitoCodeType",
+	"pools" : [
+		 ],
+	"super" : "TRASillitoType",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+convenience
+numberOfQuestionsPerSession
+	^ self codeType numberOfQuestionsPerSessionForGroup: self

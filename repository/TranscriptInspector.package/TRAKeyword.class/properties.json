@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRAKeyword",
+	"pools" : [
+		 ],
+	"super" : "TRAPartWithAfterSpaces",
+	"type" : "normal" }

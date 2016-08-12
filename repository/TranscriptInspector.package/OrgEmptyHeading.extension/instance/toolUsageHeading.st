@@ -1,0 +1,3 @@
+*TranscriptInspector
+toolUsageHeading
+	^ OrgNilHeadingItem new

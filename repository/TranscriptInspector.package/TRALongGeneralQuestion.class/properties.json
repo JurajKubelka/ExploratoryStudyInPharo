@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRALongGeneralQuestion",
+	"pools" : [
+		 ],
+	"super" : "TRAGeneralQuestion",
+	"type" : "normal" }

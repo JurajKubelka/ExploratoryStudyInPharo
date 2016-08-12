@@ -1,0 +1,3 @@
+*TranscriptInspector-graphs
+toolUsagePerCodeKnowledgeAndParticipant
+	^ OrgGTInspectorIntegration uniqueInstance toolUsagePerCodeKnowledgeAndParticipantIn: RTView new node: self.

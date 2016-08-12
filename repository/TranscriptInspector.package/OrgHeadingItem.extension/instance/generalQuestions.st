@@ -1,0 +1,3 @@
+*TranscriptInspector
+generalQuestions
+	^ self transcriptHeading basicGeneralQuestions

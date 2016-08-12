@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Questions",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"questions" ],
+	"name" : "TRAQuestions",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+writing
+horizontalLine
+	self writer horizontalLine

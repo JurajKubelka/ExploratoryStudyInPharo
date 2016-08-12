@@ -1,0 +1,3 @@
+writing
+columnSeparator
+	stream nextPut: ' & '

@@ -1,0 +1,3 @@
+accessing
+generalQuestions
+	^ self questions

@@ -1,0 +1,3 @@
+*TranscriptInspector
+questionLevel
+	^ 0

@@ -1,0 +1,3 @@
+*TranscriptInspector-graphs
+boxPlotQuestionsPerCategoryAndCodeKnowledge
+	^ OrgGTInspectorIntegration uniqueInstance paintBoxPlotQuestionsViewIn: RTView new node: self.

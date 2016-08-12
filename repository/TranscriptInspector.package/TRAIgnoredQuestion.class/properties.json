@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Questions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRAIgnoredQuestion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

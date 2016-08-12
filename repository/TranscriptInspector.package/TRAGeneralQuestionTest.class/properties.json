@@ -1,0 +1,15 @@
+{
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"q1",
+		"q2" ],
+	"name" : "TRAGeneralQuestionTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

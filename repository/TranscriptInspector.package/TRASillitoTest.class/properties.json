@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"sillito" ],
+	"name" : "TRASillitoTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

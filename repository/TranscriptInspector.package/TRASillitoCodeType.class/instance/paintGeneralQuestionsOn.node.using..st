@@ -1,0 +1,3 @@
+visitor
+paintGeneralQuestionsOn: aRTGrapher node: anOrgHeadingItem using: anOrgGTInspectorIntegration 
+	^ anOrgGTInspectorIntegration paintOneTypeGeneralQuestionsWithLegendOn: aRTGrapher node: anOrgHeadingItem

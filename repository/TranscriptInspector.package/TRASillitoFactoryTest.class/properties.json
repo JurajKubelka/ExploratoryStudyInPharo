@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"factory" ],
+	"name" : "TRASillitoFactoryTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

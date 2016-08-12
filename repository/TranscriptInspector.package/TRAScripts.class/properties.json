@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRAScripts",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

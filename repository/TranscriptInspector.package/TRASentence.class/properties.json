@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRASentence",
+	"pools" : [
+		 ],
+	"super" : "TRAItemPart",
+	"type" : "normal" }

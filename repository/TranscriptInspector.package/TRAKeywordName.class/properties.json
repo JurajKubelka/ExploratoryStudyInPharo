@@ -1,0 +1,15 @@
+{
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keywordName",
+		"keywords" ],
+	"name" : "TRAKeywordName",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

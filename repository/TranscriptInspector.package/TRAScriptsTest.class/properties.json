@@ -1,0 +1,15 @@
+{
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"scripts",
+		"result" ],
+	"name" : "TRAScriptsTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

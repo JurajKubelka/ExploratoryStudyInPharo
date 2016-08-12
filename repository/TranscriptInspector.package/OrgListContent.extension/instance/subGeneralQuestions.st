@@ -1,0 +1,3 @@
+*TranscriptInspector
+subGeneralQuestions
+	^ self sublist directGeneralQuestions

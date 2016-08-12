@@ -1,0 +1,3 @@
+accessing
+generalQuestion
+	^ shortGeneralQuestion / longGeneralQuestion

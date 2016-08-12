@@ -1,0 +1,16 @@
+{
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"shortName",
+		"longName",
+		"subgroup" ],
+	"name" : "TRAAbstractSillitoQuestion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

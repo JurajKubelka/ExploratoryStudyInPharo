@@ -1,0 +1,3 @@
+*TranscriptInspector
+videoFileReference
+	^ self videoFullFilename asFileReference

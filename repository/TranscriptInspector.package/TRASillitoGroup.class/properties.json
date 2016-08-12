@@ -1,0 +1,18 @@
+{
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTRAQuestionOccurrences classTrait + TTRAQuestionGroupHierarchy classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subgroups",
+		"groupType",
+		"codeType" ],
+	"name" : "TRASillitoGroup",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TTRAQuestionOccurrences + TTRAQuestionGroupHierarchy",
+	"type" : "normal" }

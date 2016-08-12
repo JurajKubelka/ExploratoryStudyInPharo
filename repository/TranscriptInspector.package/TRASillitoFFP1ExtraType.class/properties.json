@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRASillitoFFP1ExtraType",
+	"pools" : [
+		 ],
+	"super" : "TRASillitoFFPType",
+	"type" : "normal" }

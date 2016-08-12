@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title" ],
+	"name" : "TRAExportTitle",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

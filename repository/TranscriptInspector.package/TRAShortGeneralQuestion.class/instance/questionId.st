@@ -1,0 +1,3 @@
+accessing
+questionId
+	^ self contents
