@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'TranscriptInspector',
+      #directory : 'repository',
+      #platforms : [ #pharo ]
+    }
+  ]
+}
