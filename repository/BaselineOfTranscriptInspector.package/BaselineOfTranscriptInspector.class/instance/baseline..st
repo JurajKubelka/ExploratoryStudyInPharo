@@ -6,7 +6,6 @@ baseline: spec
 		spec project: 'OrgMode' with: [
 				spec
 					className: #ConfigurationOfOrgMode;
-					version: #'stable';
-					repository: 'github://JurajKubelka/OrgMode:master/repository' ].
+					repository: 'github://JurajKubelka/OrgMode/repository' ].
 		spec package: #TranscriptInspector with: [
 				spec requires: #('OrgMode' ). ]. ].
