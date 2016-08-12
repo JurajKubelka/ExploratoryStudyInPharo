@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfTranscriptInspector",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfTranscriptInspector",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
