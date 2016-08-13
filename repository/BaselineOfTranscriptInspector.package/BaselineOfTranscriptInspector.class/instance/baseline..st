@@ -3,9 +3,12 @@ baseline: spec
 	<baseline>
 
 	spec for: #'common' do: [
-		spec project: 'OrgMode' with: [
-				spec
-					className: #ConfigurationOfOrgMode;
-					repository: 'github://JurajKubelka/OrgMode/repository' ].
+		spec project: 'Roassal2' with: [
+			spec
+				className: #ConfigurationOfRoassal2;
+				versionString: #'stable';
+				repository: 'http://www.smalltalkhub.com/mc/ObjectProfile/Roassal2/main' ].
+		spec baseline: 'OrgMode' with: [
+			spec repository: 'github://JurajKubelka/OrgMode/repository' ].
 		spec package: #TranscriptInspector with: [
-				spec requires: #('OrgMode' ). ]. ].
+				spec requires: #('OrgMode' 'Roassal2'). ]. ].
