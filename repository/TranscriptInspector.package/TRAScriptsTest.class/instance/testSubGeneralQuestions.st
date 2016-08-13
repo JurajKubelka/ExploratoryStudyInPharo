@@ -1,7 +1,7 @@
 tests
 testSubGeneralQuestions
 	| questions subQuestions |
-	result := scripts parseString: OrgExamples headingAndLists3.
+	result := scripts parseString: TRAExamples headingAndLists3.
 	questions := result rootGeneralQuestions.
 	subQuestions := questions first subGeneralQuestions.
 	self assert: subQuestions size equals: 1.

@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "JurajKubelka 8/12/2016 21:56",
 	"instvars" : [
-		"scripts",
-		"result",
-		"window" ],
-	"name" : "TRAScriptsTest",
+		 ],
+	"name" : "TRAExamples",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Object",
 	"type" : "normal" }

@@ -1,3 +1,5 @@
 *TranscriptInspector
 familiarRatio
-	^ (self propertyValueAt: #Familiar) asNumber
+	^ (self propertyValueAt: #Familiar) 
+		ifEmpty: 0
+		ifNotEmpty: #asNumber

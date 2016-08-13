@@ -1,7 +1,7 @@
 tests
 testRootGeneralQuestionNames
 	| questions |
-	result := scripts parseString: OrgExamples headingAndLists3.
+	result := scripts parseString: TRAExamples headingAndLists3.
 	questions := result rootGeneralQuestions.
 	self assert: questions size equals: 3.
 	self assert: questions first contents equals: 'General question'.

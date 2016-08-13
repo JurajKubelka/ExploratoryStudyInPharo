@@ -5,7 +5,9 @@ abridgeQuestions
 	self questions do: [ :each | | sillito |
 		sillito := each sillitoQuestion.
 		dictionary 
-			 at: sillito shortName 
+			at: sillito shortName 
 			ifPresent: [ :aSillito | aSillito addQuestion: each ] 
-			ifAbsentPut: [ sillito addQuestion: each; yourself ] ].
+			ifAbsent: [ dictionary 
+				at: sillito shortName
+				put: (sillito addQuestion: each; yourself) ] ].
 	^ dictionary values
