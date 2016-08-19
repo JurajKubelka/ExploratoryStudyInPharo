@@ -1,7 +1,7 @@
 api
 runAppleScript: aString 
-	[ ExternalUnixOSProcess 
-			forkAndExec: '/usr/bin/osascript' 
-			arguments: (Array with: '-e' with: aString) 
-			environment: (UnixProcess env).
+	[ #OSSUnixSubprocess asClass new
+			command: '/usr/bin/osascript';
+			arguments: (Array with: '-e' with: aString); 
+			run.
 	] on: ProcessAlreadyTerminating do: [ :exeption | "do nothing" ]
