@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TRAInspectorIntegration",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
