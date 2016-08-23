@@ -1,14 +1,15 @@
 {
 	"category" : "TranscriptInspector-Roassal",
 	"classinstvars" : [
-		"uniqueInstance" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "TRARoassal2",
+		"value",
+		"markerColor" ],
+	"name" : "TRATimelineMarker",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RTAbstractGrapherDecorator",
 	"type" : "normal" }

@@ -1,6 +1,6 @@
 *TranscriptInspector-toolusage-timeline
-paintToolUsageOn: aView node: aNode withQuestions: aBoolean
-	| builder keywords globalStart set keywordColors keywordNormalizer questions questionSet questionNormalizer toolUsageNormalizer legend staticColor dynamicColor otherColor |
+paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolean
+	| builder keywords globalStart set keywordColors keywordNormalizer questions questionSet questionNormalizer toolUsageNormalizer legend staticColor dynamicColor otherColor missOpportunities |
 	keywords := aNode toolUsageKeywords reject: #isRestTime.
 	globalStart := (keywords detectMin: [ :each | each start ]) ifNotNil: #start.
 
@@ -11,7 +11,7 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean
 								ifNotNil: [ aQuestion start min: globalStart ]
 								ifNil: [ aQuestion start ] ]
 							ifNil: [ globalStart ].
-
+							
 	keywordColors := RTColorPalette qualitative colors: 3 scheme: 'Set1'.
 	staticColor := keywordColors third.
 	dynamicColor := keywordColors second.
@@ -81,17 +81,33 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean
 			minutes printString, ':', restSeconds printString ];
 		title: 'Time [minutes:seconds]'.
 	builder axisY title: 'Session'.
+	
+	
+	"Miss Opportunity"
+	missOpportunities := (aNode transcriptHeadings flatCollect: #keywords) select: #isMissOpportunity.					
+	missOpportunities do: [ :eachKeyword |
+		builder addDecorator: (TRATimelineMarker new 
+			value: (eachKeyword start - globalStart) asSeconds;
+			markerColor: Color red;
+			yourself) ].
+	missOpportunities := (aNode transcriptHeadings flatCollect: #keywords) select: #isFalseAssumption.					
+	missOpportunities do: [ :eachKeyword |
+		builder addDecorator: (TRATimelineMarker new 
+			value: (eachKeyword start - globalStart) asSeconds;
+			markerColor: Color green;
+			yourself) ].
 	builder build.
 	
-	"legend"
-	legend := RTLegendBuilder new.
-"	legend onDemand.
-"	legend view: builder view.
+	legendBoolean ifTrue: [ 
+		"legend"
+		legend := RTLegendBuilder new.
+	"	legend onDemand.
+	"	legend view: builder view.
 
-"	legend addText: aNode codeType longName.
-"	"keywordSet withIndexDo: [ :eachKeyword :index |
-		legend addColor: (keywordColors at: index) text: eachKeyword ]."
-	legend addColor: staticColor text: 'Static Tool Usage'.
-	legend addColor: dynamicColor text: 'Dynamic Tool Usage'.
-"	legend addColor: otherColor text: 'revise it!'.
-"	legend build.
+	"	legend addText: aNode codeType longName.
+	"	"keywordSet withIndexDo: [ :eachKeyword :index |
+			legend addColor: (keywordColors at: index) text: eachKeyword ]."
+		legend addColor: staticColor text: 'Static Tool Usage'.
+		legend addColor: dynamicColor text: 'Dynamic Tool Usage'.
+	"	legend addColor: otherColor text: 'revise it!'.
+	"	legend build ].
