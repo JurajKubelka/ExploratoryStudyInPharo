@@ -11,12 +11,13 @@ durationPerStaticAndDynamicPerQuestionLevelCumulative: aNode
 	aNode generalQuestions collect: [ :e | | level dynamic duration result |
 		level := e level. 
 		dynamic := e staticVsLiveToolUsage. 
-		duration := e duration.
-		result := levels at: level ifAbsentPut: [ { 0 asDuration. 0 asDuration } ].
-		levels 
-			at: level 
-			put: (Array 
-				with: duration * (1 - dynamic) + result first 
-				with: duration * dynamic + result second).
+		dynamic isNaN | dynamic isInfinite ifFalse: [ 
+			duration := e duration.
+			result := levels at: level ifAbsentPut: [ { 0 asDuration. 0 asDuration } ].
+			levels 
+				at: level 
+				put: (Array 
+					with: duration * (1 - dynamic) + result first 
+					with: duration * dynamic + result second) ].
 	] as: Set.
 	^ levels.

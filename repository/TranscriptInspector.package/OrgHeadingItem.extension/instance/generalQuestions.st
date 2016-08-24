@@ -1,3 +1,3 @@
 *TranscriptInspector
 generalQuestions
-	^ self transcriptHeading basicGeneralQuestions
+	^ self transcriptHeadings flatCollect: #basicGeneralQuestions
