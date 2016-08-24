@@ -1,3 +1,3 @@
 converting
 asSillitoQuestion
-	^ self
+	^ self copy
