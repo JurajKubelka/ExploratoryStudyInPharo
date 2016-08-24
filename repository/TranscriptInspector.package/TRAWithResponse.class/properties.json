@@ -1,0 +1,14 @@
+{
+	"category" : "TranscriptInspector-Questions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"responses" ],
+	"name" : "TRAWithResponse",
+	"pools" : [
+		 ],
+	"super" : "TRAResponse",
+	"type" : "normal" }

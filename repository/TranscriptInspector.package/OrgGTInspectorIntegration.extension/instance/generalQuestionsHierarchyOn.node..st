@@ -10,4 +10,8 @@ generalQuestionsHierarchyOn: composite node: aNode
 					aStream space.
 					aStream print: (TRAFloatPrinter uniqueInstance 
 								normalize: aQuestion staticVsLiveToolUsage).
-					aStream space; print: aQuestion ] ]
+					aStream 
+						space; 
+						print: aQuestion; 
+						space;
+						nextPutAll: aQuestion responseState shortName ] ]

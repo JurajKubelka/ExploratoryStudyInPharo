@@ -11,7 +11,7 @@ generalQuestionsOn: composite node: aNode
 				evaluated: [ :aGeneralQuestion | aGeneralQuestion printDuration ]
 				width: 73
 				tags: {}
-				sortedBy: [ :a :b | a duration > b duration ] ;
+				sortedBy: [ :a :b | a duration > b duration ];
 			column: 'Tool' 
 				evaluated: [ :aGeneralQuestion | | ratio |
 					ratio := aGeneralQuestion staticVsLiveToolUsage asFloat.
@@ -20,6 +20,11 @@ generalQuestionsOn: composite node: aNode
 				width: 80
 				tags: {}
 				sortedBy: [ :a :b | a staticVsLiveToolUsage > b staticVsLiveToolUsage ];
+			column: 'Response' 
+				evaluated: [ :aGeneralQuestion | aGeneralQuestion responseState shortName ]
+				width: 80
+				tags: {}
+				sortedBy: [ :a :b | a responseState shortName < b responseState shortName ];
 			column: 'Text'
 				evaluated: [ :aGeneralQuestion | aGeneralQuestion text ]
 				width: 300;

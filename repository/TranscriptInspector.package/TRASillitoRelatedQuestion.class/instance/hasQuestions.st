@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 hasQuestions
 	^ self questions notEmpty
