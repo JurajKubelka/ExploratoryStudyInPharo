@@ -1,4 +1,6 @@
 adding
 addQuestion: aTRASillitoQuestion 
-	aTRASillitoQuestion subgroup: self.
-	^ self questions addLast: aTRASillitoQuestion
+	| question |
+	question := aTRASillitoQuestion asSillitoQuestion.
+	question subgroup: self.
+	^ self questions addLast: question

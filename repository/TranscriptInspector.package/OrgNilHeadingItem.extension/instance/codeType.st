@@ -1,0 +1,3 @@
+*TranscriptInspector
+codeType
+	^ TRASillitoAll default

@@ -1,0 +1,3 @@
+accessing
+timespan
+	^ Timespan current

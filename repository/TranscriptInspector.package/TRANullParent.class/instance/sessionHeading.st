@@ -1,0 +1,3 @@
+accessing
+sessionHeading
+	^ OrgNilHeadingItem new
