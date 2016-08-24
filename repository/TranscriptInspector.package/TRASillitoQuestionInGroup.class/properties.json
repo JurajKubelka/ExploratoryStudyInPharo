@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"question" ],
+		"question",
+		"subgroup" ],
 	"name" : "TRASillitoQuestionInGroup",
 	"pools" : [
 		 ],
-	"super" : "TRAAbstractSillitoQuestion",
+	"super" : "Object",
 	"type" : "normal" }

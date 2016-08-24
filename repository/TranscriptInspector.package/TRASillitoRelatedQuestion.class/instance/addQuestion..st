@@ -1,4 +1,6 @@
 adding
 addQuestion: aTRAGeneralQuestion 
-	aTRAGeneralQuestion subgroup: self.
-	^ self questions addLast: aTRAGeneralQuestion
+	| question |
+	question := aTRAGeneralQuestion asSillitoQuestion.
+	question subgroup: self.
+	^ self questions addLast: question
