@@ -3,4 +3,6 @@ printOn: aStream
 	aStream 
 		print: self question;
 		nextPutAll: ' as ';
-		print: self response
+		nextPutAll: (self response 
+			ifNotNil: [ :aResponse | aResponse contents ]
+			ifNil: '')

@@ -14,7 +14,7 @@ generalQuestionsPerLevelWithEdges: aNode
 		eachGroup do: [ :eachQuestion |
 			eachQuestion subGeneralQuestions do: [ :eachSubQuestion |
 				groups do: [ :eachGroup2 | 
-					(eachGroup2 includes: eachSubQuestion)
+					(eachGroup2 anySatisfy: [ :aQuestionInGroup | aQuestionInGroup question = eachSubQuestion ])
 						ifTrue: [ subGroups add: eachGroup2 ] ] ]
 			 ].
 		subGroups ]. 
