@@ -2,23 +2,23 @@ missed opportunity
 missedOpportunitesAndFalseAssumptionsIn: composite node: aNode
 	composite table
 		title: 'Missed';
-		display: [ (self missedOpportunitesAndFalseAssumptions: aNode) associations ];
+		display: [ (self missedOpportunitesAndFalseAssumptions: aNode) values ];
 		column: 'Session'
-			evaluated: [ :assoc | assoc key sessionId ]
+			evaluated: [ :collection | collection first sessionId ]
 			width: 80
 			tags: {  } 
-			sortedBy: [ :a :b | a key sessionOrder < b key sessionOrder ];
+			sortedBy: [ :a :b | a first sessionOrder < b first sessionOrder ];
 		column: 'Missed Dyn'
-			evaluated: [ :assoc | assoc value second size ]
+			evaluated: [ :collection | collection second size ]
 			width: 80;
 		column: 'Missed Stat'
-			evaluated: [ :assoc | assoc value third size ]
+			evaluated: [ :collection | collection third size ]
 			width: 80;
 		column: 'False Dyn'
-			evaluated: [ :assoc | assoc value fourth size ]
+			evaluated: [ :collection | collection fourth size ]
 			width: 80;
 		column: 'False Stat'
-			evaluated: [ :assoc | assoc value fifth size ]
+			evaluated: [ :collection | collection fifth size ]
 			width: 80;
 		installExportToCSV;
 		yourself
