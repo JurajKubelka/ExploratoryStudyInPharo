@@ -6,8 +6,8 @@ abridgeQuestions
 		sillito := each sillitoQuestion.
 		dictionary 
 			at: sillito shortName 
-			ifPresent: [ :aSillito | aSillito addQuestion: each ] 
+			ifPresent: [ :aSillito | aSillito addAllQuestions: each generalQuestions ] 
 			ifAbsent: [ dictionary 
 				at: sillito shortName
-				put: (sillito addQuestion: each; yourself) ] ].
+				put: (sillito addAllQuestions: each generalQuestions; yourself) ] ].
 	^ dictionary values
