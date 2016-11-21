@@ -1,0 +1,3 @@
+*TranscriptInspector-testing
+isSillito
+	^ false
