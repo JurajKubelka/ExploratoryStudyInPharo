@@ -4,7 +4,7 @@ visitSillitoGroup: aTRASillitoGroup
 	self 
 		horizontalLine;
 		firstSeparator;
-		boldField: aTRASillitoGroup longName;
+		boldField: aTRASillitoGroup longName, ' (', aTRASillitoGroup shortName, ')';
 		columnSeparator.
 	questionsPerSession do: [ :eachSession |  ] separatedBy: [ self columnSeparator ].
 	self lineSeparator.

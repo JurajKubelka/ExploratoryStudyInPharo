@@ -1,6 +1,7 @@
 private
 createSillitoQuestionsPerSessionHeadings: aCollectionOfSessionHeadings 
 	^ OrderedCollection new 
+			add: ((TRAExportTitle new title: 'Tool') -> (TRAExportToolUsage new sessions: aCollectionOfSessionHeadings));
 			addAll: (self 
 				createSillitoQuestionsPerSessionHeadings: (aCollectionOfSessionHeadings select: [ :each | each isFamiliarSession not ])
 				title: '#1'

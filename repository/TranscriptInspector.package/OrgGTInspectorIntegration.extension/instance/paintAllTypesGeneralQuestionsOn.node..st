@@ -18,12 +18,12 @@ paintAllTypesGeneralQuestionsOn: aView node: aNode
 	composite move: #unfamiliar onTheRightOf: #all.
 	composite move: #familiar onTheRightOf: #unfamiliar.
 "	composite move: #boxplot below: #all.
-"	composite nameGroup: #all as: 'Questions Asked On Familiar and Unfamiliar Code'.
-	composite nameGroup: #familiar as: 'Questions Asked On Familiar Code'.
-	composite nameGroup: #unfamiliar as: 'Questions Asked On Unfamiliar Code'.
+"	composite nameGroup: #all as: 'Questions Asked On Familiar and Unfamiliar Code' color: Color black.
+	composite nameGroup: #familiar as: 'Questions Asked On Familiar Code' color: Color black.
+	composite nameGroup: #unfamiliar as: 'Questions Asked On Unfamiliar Code' color: Color black.
 	
 	self
 		paintGeneralQuestionsLegendOn: aView
 		text: aNode codeType longName
-		ourColor: RTMultipleData new colorPalette first
-		sillitoColor: RTMultipleData new colorPalette second
+		ourColor: Color gray
+		sillitoColor: Color black

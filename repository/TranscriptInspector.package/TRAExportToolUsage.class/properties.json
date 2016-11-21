@@ -1,0 +1,16 @@
+{
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sessions",
+		"questions",
+		"sillito" ],
+	"name" : "TRAExportToolUsage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

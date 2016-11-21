@@ -12,15 +12,16 @@ paintOneTypeGeneralQuestionsOn: aView node: aNode
 
 	builder := RTGrapher new.
 	builder view: aView.
-	ds := RTMultipleData new. 
-"	ds barShape width: 15; color: dataColor.
-"	ds points: groups.
+	ds := TRAMultipleData new.
+	ds colorPalette: { Color gray lighter. Color black }.
+	ds points: groups.
 	ds addMetric: [ :pair | pair first numberOfQuestions / total * 100 ].
 	ds addMetric: [ :pair | pair second numberOfQuestions / total2 * 100 ].
-	ds barChartWithBarTitle: [ :pair | pair first shortName ].
+	ds barChartWithBarTitle: [ :pair | pair first shortName ] rotation: 0 color: Color black.
 	builder add: ds.
-
-	builder axisX noLabel; noTick. 
-	builder axisY labelConversion: [ :aNumber | aNumber asInteger asString, ' %' ].
+	builder axisX noLabel; noTick; color: Color black.
+	builder 
+		axisY labelConversion: [ :aNumber | aNumber asInteger asString, ' %' ];
+		color: Color black.
 	builder build.
 
