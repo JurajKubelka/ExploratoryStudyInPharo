@@ -5,8 +5,12 @@ inspectTranscript
 	file := FileLocator workingDirectory / 'transcripts.org.txt'.
 	"Localy"
 	file exists ifFalse: [ 
-		file := FileLocator home / 'Documents' / 'Research'
+		file := FileLocator documents / 'Research'
 			/ 'ExploratoryStudyInPharo2014' / 'transcripts.org.txt' ].
+	"Part of TSE paper"
+	file exists ifFalse: [ 
+			file := FileLocator documents / 'Research'
+				/ 'MyResearchPapers' / '2016-TSE' / 'transcript' / 'transcripts.org.txt' ].
 	"Dropbox"
 	file exists ifFalse: [ 
 			file := FileLocator home / 'Dropbox' / 'Documents' / 'UChile'
