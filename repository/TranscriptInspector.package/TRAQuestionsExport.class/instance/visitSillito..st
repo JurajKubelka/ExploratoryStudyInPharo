@@ -10,3 +10,4 @@ visitSillito: aTRASillito
 		self field: eachSession value count ]
 		separatedBy: [ self columnSeparator ].
 	self lineSeparator.
+	self emacsConfiguration.
