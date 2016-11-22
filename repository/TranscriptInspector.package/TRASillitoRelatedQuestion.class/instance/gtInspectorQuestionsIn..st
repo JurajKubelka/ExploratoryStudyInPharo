@@ -29,4 +29,6 @@ gtInspectorQuestionsIn: composite
 				width: 40;
 			column: 'Long name'
 				evaluated: [ :each | each longName ]
-				width: 300
+				width: 300;
+			send: [ :questionInGroup |
+				questionInGroup ifNotNil: [ :aQuestion | aQuestion question ] ]
