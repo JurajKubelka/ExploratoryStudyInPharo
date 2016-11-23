@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"export",
 		"question" ],
-	"name" : "TRAExportToolUsageQuestion",
+	"name" : "TRAExportContext",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sessions",
-		"questions",
-		"sillito" ],
-	"name" : "TRAExportToolUsage",
+		 ],
+	"name" : "TRASillitoToolUsageQuestion",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TRAToolUsageQuestion",
 	"type" : "normal" }

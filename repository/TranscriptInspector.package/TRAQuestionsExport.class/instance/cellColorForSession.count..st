@@ -1,3 +1,6 @@
 private
 cellColorForSession: aTRATableColumn count: anInteger
-	^ ((anInteger / aTRATableColumn maxValue) * 50) asInteger
+	| value |
+	value := ((anInteger / aTRATableColumn maxValue) * 50) asInteger.
+	self haltIf: [ value > 100 ].
+	^ value

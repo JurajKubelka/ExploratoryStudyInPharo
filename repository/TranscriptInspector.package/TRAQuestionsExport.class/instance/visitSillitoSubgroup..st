@@ -13,14 +13,6 @@ visitSillitoSubgroup: aTRASillitoSubgroup
 		self firstSeparator.
 		self field: eachQuestion fullName. 
 		self columnSeparator.
-		tableColumns do: [ :eachColumn | | question count field alpha |
-			question := eachColumn sameQuestionAs: eachQuestion.
-			(eachColumn isSillito and: [ question isExtraQuestion ])
-				ifTrue: [ count := 0. field := '-'. ]
-				ifFalse: [ count := question ifNotNil: #count ifNil: [ 0 ].
-					count isZero ifTrue: [ field := '' ] ifFalse: [ field := count printString ] ].
-			alpha := self cellColorForSession: eachColumn count: count.
-			self field: field color: 'blue' alpha: alpha ]
-			separatedBy: [ self columnSeparator ].
+		tableColumns do: [ :eachColumn | eachColumn accept: (TRAExportContext export: self question: eachQuestion) ] separatedBy: [ self columnSeparator ].
 		self lineSeparator.
 		index odd ifTrue: [ self dashedHorizontalLine ] ].

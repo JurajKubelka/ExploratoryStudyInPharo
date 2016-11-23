@@ -1,3 +1,6 @@
 writing
 field: aString 
-	stream nextPut: (aString asString replaceAllRegex: '#' with: '\#')
+	| output |
+	output := aString asString replaceAllRegex: '#' with: '\#'.
+	output := output replaceAllRegex: '%' with: '\%'.
+	stream nextPut: output

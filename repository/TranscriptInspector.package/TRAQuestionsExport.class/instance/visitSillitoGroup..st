@@ -15,7 +15,7 @@ visitSillitoGroup: aTRASillitoGroup
 	self field: 'Total in the category'.
 	self columnSeparator.
 	tableColumns do: [ :eachSession | | field |
-		field := (eachSession value groupSameAs: aTRASillitoGroup) count.
+		field := (eachSession groupSameAs: aTRASillitoGroup) count.
 		field isZero ifTrue: [ field := '' ].
 		self field: field ]
 		separatedBy: [ self columnSeparator ].

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"group" ],
-	"name" : "TRAExportToolUsageGroup",
+		 ],
+	"name" : "TRATableSillitoToolUsageColumn",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TRATableColumn",
 	"type" : "normal" }
