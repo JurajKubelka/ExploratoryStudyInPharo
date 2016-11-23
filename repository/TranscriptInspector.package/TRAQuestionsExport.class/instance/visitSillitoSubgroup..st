@@ -9,7 +9,7 @@ visitSillitoSubgroup: aTRASillitoSubgroup
 		tableColumns do: [ :eachSession |  ] separatedBy: [ self columnSeparator ].
 		self lineSeparator ].
 	"data"
-	aTRASillitoSubgroup questions do: [ :eachQuestion |
+	aTRASillitoSubgroup questions withIndexDo: [ :eachQuestion :index |
 		self firstSeparator.
 		self field: eachQuestion fullName. 
 		self columnSeparator.
@@ -22,4 +22,5 @@ visitSillitoSubgroup: aTRASillitoSubgroup
 			alpha := self cellColorForSession: eachColumn count: count.
 			self field: field color: 'blue' alpha: alpha ]
 			separatedBy: [ self columnSeparator ].
-		self lineSeparator ].
+		self lineSeparator.
+		index odd ifTrue: [ self dashedHorizontalLine ] ].

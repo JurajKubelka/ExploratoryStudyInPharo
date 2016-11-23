@@ -1,0 +1,3 @@
+writing
+dashedHorizontalLine
+	self writer dashedHorizontalLine
