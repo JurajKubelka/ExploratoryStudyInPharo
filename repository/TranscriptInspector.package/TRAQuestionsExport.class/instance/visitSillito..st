@@ -7,7 +7,7 @@ visitSillito: aTRASillito
 	self field: 'Total'.
 	self columnSeparator.
 	tableColumns do: [ :tableColumn |
-		self field: tableColumn count ]
+		self field: tableColumn columnSum ]
 		separatedBy: [ self columnSeparator ].
 	self lineSeparator.
 	self emacsConfiguration.

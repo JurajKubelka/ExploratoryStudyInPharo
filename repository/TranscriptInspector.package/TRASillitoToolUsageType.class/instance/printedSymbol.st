@@ -1,0 +1,3 @@
+accessing
+printedSymbol
+	^ self typeId
