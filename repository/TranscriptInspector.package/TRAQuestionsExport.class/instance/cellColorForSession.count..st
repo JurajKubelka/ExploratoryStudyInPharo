@@ -1,3 +1,3 @@
 private
-cellColorForSession: anAssociation count: anInteger
-	^ ((anInteger / anAssociation value maxQuestionCount) * 50) asInteger
+cellColorForSession: aTRATableColumn count: anInteger
+	^ ((anInteger / aTRATableColumn maxValue) * 50) asInteger

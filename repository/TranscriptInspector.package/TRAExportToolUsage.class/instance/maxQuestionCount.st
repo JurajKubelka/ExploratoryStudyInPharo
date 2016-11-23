@@ -1,3 +1,0 @@
-accessing
-maxQuestionCount
-	^ 100

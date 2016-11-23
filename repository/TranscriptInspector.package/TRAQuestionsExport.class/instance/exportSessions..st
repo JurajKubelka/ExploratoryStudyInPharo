@@ -4,6 +4,6 @@ exportSessions: aCollectionOfSessionHeadings
 	questions := aCollectionOfSessionHeadings flatCollect: #generalQuestions.
 	sillitoAll := TRASillito all sillito.
 	"returns sessionHeading -> TRASillito object"
-	questionsPerSession := self createSillitoQuestionsPerSessionHeadings: aCollectionOfSessionHeadings.
-	self headerColumns: questionsPerSession.
+	tableColumns := self createTableColumnsPerSessionHeadings: aCollectionOfSessionHeadings.
+	self headerColumns: tableColumns.
 	sillitoAll accept: self.

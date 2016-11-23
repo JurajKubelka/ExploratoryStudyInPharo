@@ -4,7 +4,7 @@ headerColumns: aCollection
 	self boldField: 'Question Types per Category'.
 	self columnSeparator.
 	aCollection 
-		do: [ :eachSession |
-			self field: (eachSession key sessionId) ]
+		do: [ :eachColumn |
+			self field: (eachColumn title) ]
 		separatedBy: [ self columnSeparator ].
 	self lineSeparator.

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"title" ],
-	"name" : "TRAExportTitle",
+		 ],
+	"name" : "TRATableSillitoColumn",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TRATableColumn",
 	"type" : "normal" }

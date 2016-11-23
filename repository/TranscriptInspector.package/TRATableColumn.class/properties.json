@@ -4,14 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 11/23/2016 09:32",
 	"instvars" : [
-		"writer",
-		"sessions",
-		"questions",
-		"sillitoAll",
-		"tableColumns" ],
-	"name" : "TRAQuestionsExport",
+		"column",
+		"values" ],
+	"name" : "TRATableColumn",
 	"pools" : [
 		 ],
 	"super" : "Object",

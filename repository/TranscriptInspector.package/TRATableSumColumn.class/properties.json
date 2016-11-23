@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"writer",
-		"sessions",
-		"questions",
-		"sillitoAll",
-		"tableColumns" ],
-	"name" : "TRAQuestionsExport",
+		"title" ],
+	"name" : "TRATableSumColumn",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TRATableColumn",
 	"type" : "normal" }

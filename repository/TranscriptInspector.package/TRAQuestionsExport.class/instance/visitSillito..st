@@ -6,8 +6,8 @@ visitSillito: aTRASillito
 	self firstSeparator.
 	self field: 'Total'.
 	self columnSeparator.
-	questionsPerSession do: [ :eachSession |
-		self field: eachSession value count ]
+	tableColumns do: [ :tableColumn |
+		self field: tableColumn count ]
 		separatedBy: [ self columnSeparator ].
 	self lineSeparator.
 	self emacsConfiguration.

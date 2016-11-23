@@ -1,0 +1,1 @@
+I represent a column in an exported table. Variable column represents an object that is able to return a column title. Variable values represents an object that is able to return a value for a specific row.
