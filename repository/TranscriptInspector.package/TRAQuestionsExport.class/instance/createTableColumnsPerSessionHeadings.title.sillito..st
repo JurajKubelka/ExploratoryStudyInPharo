@@ -1,10 +1,9 @@
 private
 createTableColumnsPerSessionHeadings: aCollection title: aString sillito: aTRASillito 
-	| sorted result sum |
-	sorted := aCollection sorted: [ :a :b | a sessionOrder < b sessionOrder ].
-	result := sorted collect: [ :orgHeading |
-		TRATableColumn heading: orgHeading values: (aTRASillito codeType sillito: orgHeading generalQuestions) abridge ].
-	sum := (aTRASillito codeType sillito: (sorted flatCollect: #generalQuestions)) abridge.
+	"Creates columns for each session followed by summary and sillito column."
+	| result sum |
+	sum := (aTRASillito codeType sillito: (aCollection flatCollect: #generalQuestions)) abridge.
+	result := self createTableColumnsForSessionHeadings: aCollection sillito: aTRASillito .
 	result addLast: (TRATableColumn title: aString values: sum).
 	result addLast: (TRATableColumn sillito: aTRASillito).
 	^ result
