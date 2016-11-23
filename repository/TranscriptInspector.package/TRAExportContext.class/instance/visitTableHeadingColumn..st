@@ -5,4 +5,4 @@ visitTableHeadingColumn: aColumn
 	count := columnQuestion ifNotNil: #count ifNil: [ 0 ].
 	count isZero ifTrue: [ field := '' ] ifFalse: [ field := count printString ].
 	alpha := export cellColorForSession: aColumn count: count.
-	export field: field color: 'blue' alpha: alpha
+	export field: field color: 'gray' alpha: alpha
