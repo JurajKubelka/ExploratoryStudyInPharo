@@ -1,0 +1,1 @@
+I represent column with Sillito results for unfamiliar and familiar code.

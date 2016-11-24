@@ -1,3 +1,0 @@
-accessing
-printedSymbol
-	self shouldBeImplemented.

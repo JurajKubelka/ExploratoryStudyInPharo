@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 11/24/2016 09:33",
 	"instvars" : [
-		 ],
-	"name" : "TRASillitoToolUsageQuestion",
+		"export",
+		"question" ],
+	"name" : "TRAExportField",
 	"pools" : [
 		 ],
-	"super" : "TRAToolUsageQuestion",
+	"super" : "Object",
 	"type" : "normal" }

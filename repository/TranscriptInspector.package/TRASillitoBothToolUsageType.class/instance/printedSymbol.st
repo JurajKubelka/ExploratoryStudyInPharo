@@ -1,3 +1,3 @@
 accessing
 printedSymbol
-	^ 'b'
+	^ 's/d'

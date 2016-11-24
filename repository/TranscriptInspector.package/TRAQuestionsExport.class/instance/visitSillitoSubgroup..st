@@ -13,6 +13,6 @@ visitSillitoSubgroup: aTRASillitoSubgroup
 		self firstSeparator.
 		self field: eachQuestion fullName. 
 		self columnSeparator.
-		tableColumns do: [ :eachColumn | eachColumn accept: (TRAExportContext export: self question: eachQuestion) ] separatedBy: [ self columnSeparator ].
+		tableColumns do: [ :eachColumn | eachColumn accept: (TRAExportField export: self question: eachQuestion) ] separatedBy: [ self columnSeparator ].
 		self lineSeparator.
 		index odd ifTrue: [ self dashedHorizontalLine ] ].

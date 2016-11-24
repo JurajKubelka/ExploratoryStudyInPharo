@@ -1,0 +1,1 @@
+I represent a column of a particular session.

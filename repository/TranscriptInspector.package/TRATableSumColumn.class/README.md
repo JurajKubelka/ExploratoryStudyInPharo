@@ -1,0 +1,1 @@
+I represent sum column for all given sessions.
