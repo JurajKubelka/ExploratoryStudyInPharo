@@ -7,7 +7,7 @@ visitSillitoGroup: aTRASillitoGroup
 		boldField: aTRASillitoGroup longName, ' (', aTRASillitoGroup shortName, ')';
 		columnSeparator.
 	tableColumns do: [ :eachSession |  ] separatedBy: [ self columnSeparator ].
-	self lineSeparator.
+	self tableLineSeparator.
 	"data"
 	aTRASillitoGroup subgroups do: [ :each | each accept: self ].
 	"total"
@@ -19,4 +19,4 @@ visitSillitoGroup: aTRASillitoGroup
 		field isZero ifTrue: [ field := '' ].
 		self field: field ]
 		separatedBy: [ self columnSeparator ].
-	self lineSeparator.
+	self tableLineSeparator.

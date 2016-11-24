@@ -9,5 +9,5 @@ visitSillito: aTRASillito
 	tableColumns do: [ :tableColumn |
 		self field: tableColumn columnSum ]
 		separatedBy: [ self columnSeparator ].
-	self lineSeparator.
+	self tableLineSeparator.
 	self emacsConfiguration.

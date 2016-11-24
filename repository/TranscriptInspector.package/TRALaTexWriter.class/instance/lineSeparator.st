@@ -1,3 +1,3 @@
 writing
 lineSeparator
-	^ stream nextPut: ' \\'; nextPut: String lf
+	^ stream nextPut: String lf

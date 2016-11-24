@@ -1,3 +1,3 @@
 writing
-lineSeparator
+tableLineSeparator
 	self writer lineSeparator.

@@ -7,4 +7,4 @@ headerColumns: aCollection
 		do: [ :eachColumn |
 			self field: (eachColumn title) ]
 		separatedBy: [ self columnSeparator ].
-	self lineSeparator.
+	self tableLineSeparator.

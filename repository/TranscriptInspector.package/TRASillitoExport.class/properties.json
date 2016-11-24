@@ -1,0 +1,15 @@
+{
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sillito",
+		"writer" ],
+	"name" : "TRASillitoExport",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
