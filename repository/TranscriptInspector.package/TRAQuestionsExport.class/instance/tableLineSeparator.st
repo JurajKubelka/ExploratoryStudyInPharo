@@ -1,3 +1,3 @@
 writing
 tableLineSeparator
-	self writer lineSeparator.
+	self writer tableLineSeparator.
