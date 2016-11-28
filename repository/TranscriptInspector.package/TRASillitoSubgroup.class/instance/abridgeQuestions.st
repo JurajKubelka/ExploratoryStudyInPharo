@@ -10,4 +10,4 @@ abridgeQuestions
 			ifAbsent: [ dictionary 
 				at: sillito shortName
 				put: (sillito addAllQuestions: each generalQuestions; yourself) ] ].
-	^ dictionary values
+	^ dictionary values sorted: [ :a :b | a shortName < b shortName ]

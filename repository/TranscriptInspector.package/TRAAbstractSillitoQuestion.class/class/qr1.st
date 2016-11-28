@@ -1,3 +1,3 @@
-Understanding a Subgraph (US2)
+Understanding a Subgraph Extra (US2e)
 qr1
 	^ self new shortName: #r1; longName: 'What does the failure look like?'; yourself
