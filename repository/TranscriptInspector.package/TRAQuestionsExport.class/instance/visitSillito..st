@@ -10,4 +10,4 @@ visitSillito: aTRASillito
 		self field: tableColumn columnSum ]
 		separatedBy: [ self columnSeparator ].
 	self tableLineSeparator.
-	self emacsConfiguration.
+	self emacsLaTeXConfiguration.
