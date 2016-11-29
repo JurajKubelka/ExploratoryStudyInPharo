@@ -1,0 +1,1 @@
+I write a LaTeX output. I am used for creating rows in a table.
