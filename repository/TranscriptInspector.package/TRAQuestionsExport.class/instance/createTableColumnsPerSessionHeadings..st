@@ -9,7 +9,7 @@ createTableColumnsPerSessionHeadings: aCollectionOfSessionHeadings
 	familiarOur := (familiarSillito codeType sillito: (familiarSessions flatCollect: #generalQuestions)) abridge.
 	^ OrderedCollection new
 		add: (TRATableColumn sillitoToolUsage: (TRAToolUsage new sessions: aCollectionOfSessionHeadings));
-		add: (TRATableColumn toolUsage: (TRASillitoToolUsage new sessions: aCollectionOfSessionHeadings));
+		add: (TRATableColumn symbolToolUsage: (TRASillitoToolUsage new sessions: aCollectionOfSessionHeadings));
 		add: (TRATableColumn title: '#1' values: unfamiliarOur);
 		add: (TRATableColumn title: '#2' values: familiarOur);
 		add: (TRATableColumn sillito: unfamiliarSillito);
