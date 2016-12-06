@@ -1,5 +1,4 @@
 SystemOrganization addCategory: #TranscriptInspector!
-SystemOrganization addCategory: 'TranscriptInspector-AnsweringQuestionsImprovements'!
 SystemOrganization addCategory: 'TranscriptInspector-Export'!
 SystemOrganization addCategory: 'TranscriptInspector-Nodes'!
 SystemOrganization addCategory: 'TranscriptInspector-Parsers'!
