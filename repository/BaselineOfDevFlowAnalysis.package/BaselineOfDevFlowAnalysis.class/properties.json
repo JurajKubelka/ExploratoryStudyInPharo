@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfDevFlowAnalysis",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfDevFlowAnalysis",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
