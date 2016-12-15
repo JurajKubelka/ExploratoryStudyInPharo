@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-WindowTypes-IDE",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAWTInspector",
+	"pools" : [
+		 ],
+	"super" : "DFAWTIDE",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+*DevFlowAnalysis
+tQuestionWithoutCancelDialogWindow
+	^ #QuestionWithoutCancelDialogWindow

@@ -1,0 +1,3 @@
+*DevFlowAnalysis
+tCustomQuestionDialogWindow
+	^ #CustomQuestionDialogWindow

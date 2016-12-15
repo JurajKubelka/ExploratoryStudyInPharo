@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-WindowTypes-Other",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAWTAssignmentApplication",
+	"pools" : [
+		 ],
+	"super" : "DFAWTSystemWindow",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-WindowTypes-Other",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAWTDFlow",
+	"pools" : [
+		 ],
+	"super" : "DFAWindowType",
+	"type" : "normal" }

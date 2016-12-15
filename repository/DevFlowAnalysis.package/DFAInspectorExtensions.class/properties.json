@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-Core",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAInspectorExtensions",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

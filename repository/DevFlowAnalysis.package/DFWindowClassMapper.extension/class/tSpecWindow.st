@@ -1,0 +1,3 @@
+*DevFlowAnalysis
+tSpecWindow
+	^ #SpecWindow

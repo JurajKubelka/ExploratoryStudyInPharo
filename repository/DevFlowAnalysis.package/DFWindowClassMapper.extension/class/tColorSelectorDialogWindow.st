@@ -1,0 +1,3 @@
+*DevFlowAnalysis
+tColorSelectorDialogWindow
+	^ #ColorSelectorDialogWindow

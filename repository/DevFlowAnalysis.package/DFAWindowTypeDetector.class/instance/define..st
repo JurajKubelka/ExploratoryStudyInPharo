@@ -1,0 +1,31 @@
+private
+define: aDFProfiledWindow
+	self 
+		defineDebugger: aDFProfiledWindow;
+		defineNautilus: aDFProfiledWindow;
+		defineInspector: aDFProfiledWindow;
+		defineVariable: aDFProfiledWindow;
+		defineDFlow: aDFProfiledWindow;
+		defineTestRunner: aDFProfiledWindow;
+		defineWorkspace: aDFProfiledWindow;
+		defineMonticelloBrowser: aDFProfiledWindow;
+		defineMessage: aDFProfiledWindow;
+		defineRefactoringChangesBrowser: aDFProfiledWindow;
+		defineRecentVersionsBrowser: aDFProfiledWindow;
+		defineMethodNameEditor: aDFProfiledWindow;
+		defineNewProtocolDialog: aDFProfiledWindow;
+		defineQuestionDialog: aDFProfiledWindow;
+		defineTextEntryDialogWindow: aDFProfiledWindow;
+		defineMCSaveVersionDialog: aDFProfiledWindow;
+		defineUserInterrupt: aDFProfiledWindow;
+		defineClassSearchDialog: aDFProfiledWindow;
+		defineDialogs: aDFProfiledWindow;
+		defineMCServerUserCredentials: aDFProfiledWindow;
+		defineMCServerPasswordCredentials: aDFProfiledWindow;
+		defineMCVersionInfoDialog: aDFProfiledWindow;
+		defineRemoveMessageConfirmationDialog: aDFProfiledWindow;
+		defineChangesBrowser: aDFProfiledWindow;
+		defineExamplesBrowser: aDFProfiledWindow;
+		defineTools: aDFProfiledWindow;
+		defineSystemWindow: aDFProfiledWindow;
+		defineGhostWindow: aDFProfiledWindow

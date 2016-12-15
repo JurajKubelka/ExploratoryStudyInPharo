@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAWTClassToBrowserDialog",
+	"pools" : [
+		 ],
+	"super" : "DFAWTDialog",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFASessions",
+	"pools" : [
+		 ],
+	"super" : "DFACollection",
+	"type" : "normal" }

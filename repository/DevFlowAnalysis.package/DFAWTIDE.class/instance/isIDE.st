@@ -1,0 +1,3 @@
+testing
+isIDE
+	^ true

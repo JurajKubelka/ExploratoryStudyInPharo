@@ -1,0 +1,14 @@
+{
+	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DFAWTMCVersionInfoDialog",
+	"pools" : [
+		 ],
+	"super" : "DFAWTDialog",
+	"type" : "normal" }
