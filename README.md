@@ -14,3 +14,37 @@ Metacello new
     repository: 'github://JurajKubelka/ExploratoryStudyInPharo/repository';
     load.
 ```
+
+If you want to load it in Pharo 5.0 using a local clone of this repository, you first need to load Filetree with GIT support.
+
+```
+Metacello new
+  baseline: 'FileTree';
+  repository: 'github://dalehenrich/filetree:pharo5.0/repository';
+  load: 'Git'.
+```
+
+Then you can load this project adopting the following code:
+
+```
+Metacello new
+	baseline: 'TranscriptInspector';
+	repository: 'gitfiletree://', (FileLocator documents / '<repository-location>') fullName;
+	load.
+```
+
+To load DFlow data, you can adopt the following code:
+
+```
+Metacello new
+	baseline: 'DevFlowAnalysis';
+	repository: 'gitfiletree://', (FileLocator documents / '<repository-location>') fullName;
+	load.
+```
+
+And finally use (adopting file paths to your data):
+
+```
+TRAScripts default inspectTranscript.
+DFAScripts default importSessions.
+```
