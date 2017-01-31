@@ -1,3 +1,3 @@
-Finding Focus Points Extra (FFP1e)
+Understanding a Subgraph Extra (US2e)
 qe8
-	^ self new shortName: #e8; longName: 'What is the code I have browsed or edited recently?'; yourself
+	^ self new shortName: #e8; longName: 'What does the failure look like?'; yourself
