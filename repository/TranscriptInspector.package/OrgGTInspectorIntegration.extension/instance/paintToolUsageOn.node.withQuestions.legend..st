@@ -12,10 +12,9 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolea
 								ifNil: [ aQuestion start ] ]
 							ifNil: [ globalStart ].
 							
-	keywordColors := RTColorPalette qualitative colors: 3 scheme: 'Set1'.
-	staticColor := keywordColors third.
-	dynamicColor := keywordColors second.
-	otherColor := keywordColors first.
+	staticColor := Color lightGray.
+	dynamicColor := Color black.
+	otherColor := Color red.
 	keywordNormalizer := [ :aKeyword | 
 		aKeyword isStaticTool 
 			ifTrue: [ staticColor  ]
@@ -42,8 +41,8 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolea
 	keywords ifNotEmpty: [ | knowledge |
 		knowledge := [ :familiarRatioNumber | 
 			familiarRatioNumber = 1 
-				ifTrue: [ 'F' ]
-				ifFalse: [ familiarRatioNumber = 0 ifTrue: [ 'U' ] ifFalse: [ 'P' ] ] ].
+				ifTrue: [ 'Familiar' ]
+				ifFalse: [ 'Unfamiliar' ] ].
 		set := RTTimelineSet new.
 		set objects: keywords.
 		set shape color: [ :aKeyword | keywordNormalizer rtValue: aKeyword ]; borderColor: Color white; borderWidth: 1.
@@ -79,11 +78,12 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolea
 			minutes := duration asMinutes asInteger.
 			restSeconds := duration seconds.
 			minutes printString, ':', restSeconds printString ];
-		title: 'Time [minutes:seconds]'.
-	builder axisY title: 'Session'.
-	
+		title: 'Time [minutes:seconds]';
+		color: Color black.
+	builder axisY title: 'Session'; color: Color black.
 	
 	"Miss Opportunity"
+	"
 	missOpportunities := (aNode transcriptHeadings flatCollect: #keywords) select: #isMissOpportunity.					
 	missOpportunities do: [ :eachKeyword |
 		builder addDecorator: (TRATimelineMarker new 
@@ -96,7 +96,12 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolea
 			value: (eachKeyword start - globalStart) asSeconds;
 			markerColor: Color green;
 			yourself) ].
+	"
 	builder build.
+	
+	"make x-description dragable"
+	(builder view elements select: [ :e | e trachelShape class = TRLabelShape and: [ e trachelShape text beginsWith: 'Time' ] ])
+		ifNotEmpty: [ :aCollection | aCollection any @ RTDraggable ].
 	
 	legendBoolean ifTrue: [ 
 		"legend"

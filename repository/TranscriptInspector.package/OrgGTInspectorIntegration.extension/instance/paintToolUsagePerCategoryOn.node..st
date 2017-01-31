@@ -2,7 +2,7 @@
 paintToolUsagePerCategoryOn: aView node: aNode
 	| builder palete legend sillito |
 	sillito := (aNode codeType sillito: aNode fullyDefinedQeneralQuestions).
-	palete := (RTColorPalette qualitative colors: 3 scheme: 'FlatUI1').
+	palete := { Color white. Color black}.
 	builder := RTStackBarPlot new.
 	builder view: aView.
 	
@@ -15,7 +15,7 @@ paintToolUsagePerCategoryOn: aView node: aNode
 			colors: palete).
 			
 	builder addLabelToBars: [ :assoc | (assoc key * 100) rounded asInteger asString, '%' ] if: [:assoc | assoc key > 0.12 ] color: Color white.
-
+	
 	builder build.
 
 	"legend"
@@ -24,7 +24,7 @@ paintToolUsagePerCategoryOn: aView node: aNode
 	legend view: builder view.
 "	legend onDemand.
 	legend addText: 'Static and Dynamic Tool Usage per Question'.
-"	legend addColor: palete first text: 'Static tool usage'.
+"	legend addColor: Color lightGray text: 'Static tool usage'.
 	legend addColor: palete last text: 'Dynamic tool usage'.
 	legend build.
 	^ builder view.
