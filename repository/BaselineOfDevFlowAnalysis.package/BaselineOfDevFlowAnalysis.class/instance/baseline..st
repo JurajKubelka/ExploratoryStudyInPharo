@@ -4,11 +4,9 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec repository: 'http://smalltalkhub.com/mc/JurajKubelka/ExploratoryStudyInPharo/main/'.
-		spec project: 'DevFlow' with: [
+		spec baseline: 'CustomDevFlow' with: [
 				spec
-					className: #ConfigurationOfDevFlow;
 					versionString: #'stable';
-					repository: 'http://smalltalkhub.com/mc/RobertoMinelli/DevFlow/main/' ].
+					repository: 'github://JurajKubelka/ExploratoryStudyInPharo/repository' ].
 		spec package: 'DevFlowAnalysis' with: [
-				spec requires: #('DevFlow' ). ]. ].
+				spec requires: #( 'CustomDevFlow' ). ]. ].

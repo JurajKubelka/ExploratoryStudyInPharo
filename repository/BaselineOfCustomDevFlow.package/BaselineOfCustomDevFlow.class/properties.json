@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "BaselineOf",
-	"category" : "BaselineOfDevFlowAnalysis",
+	"category" : "BaselineOfCustomDevFlow",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BaselineOfDevFlowAnalysis",
+	"name" : "BaselineOfCustomDevFlow",
 	"type" : "normal"
 }
