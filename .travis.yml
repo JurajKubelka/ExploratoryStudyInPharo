@@ -4,4 +4,5 @@ os:
 - linux
 - osx
 smalltalk:
-- Pharo-5.0
+- Pharo-6.0
+- Pharo64-6.0
