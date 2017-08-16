@@ -6,7 +6,6 @@ baseline: spec
 		spec blessing: #'baseline'.
 		spec baseline: 'CustomDevFlow' with: [
 				spec
-					versionString: #'stable';
 					repository: 'github://JurajKubelka/ExploratoryStudyInPharo/repository' ].
 		spec package: 'DevFlowAnalysis' with: [
 				spec requires: #( 'CustomDevFlow' ). ]. ].
