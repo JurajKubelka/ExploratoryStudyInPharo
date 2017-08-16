@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-IDE",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTVariableAccessesBrowser",
-	"pools" : [
-		 ],
 	"super" : "DFAWTMethodList",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-IDE",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTVariableAccessesBrowser",
+	"type" : "normal"
+}

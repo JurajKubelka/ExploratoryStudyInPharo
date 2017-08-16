@@ -1,15 +1,16 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "DevFlowAnalysis-Core",
 	"classinstvars" : [
-		"uniqueInstance" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"videoStartTimes",
-		"familiarRanking" ],
+		"familiarRanking"
+	],
 	"name" : "DFAScripts",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-IDE",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTCodeBrowser",
-	"pools" : [
-		 ],
 	"super" : "DFAWTBrowser",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-IDE",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTCodeBrowser",
+	"type" : "normal"
+}

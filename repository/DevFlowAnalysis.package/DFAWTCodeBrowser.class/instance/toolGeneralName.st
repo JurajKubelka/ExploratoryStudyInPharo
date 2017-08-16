@@ -1,0 +1,3 @@
+accessing
+toolGeneralName
+	^ 'system-browser'

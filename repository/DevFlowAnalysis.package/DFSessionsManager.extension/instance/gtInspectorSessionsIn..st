@@ -24,5 +24,6 @@ gtInspectorSessionsIn: composite
 			beMultiple;
 			withSmalltalkSearch;
 			showOnly: 50;
+			installExportToCSV;
 			sendOneOrMultipleAs: DFASessions;
 			helpMessage: 'it executes: self select: [ :each | INPUT ]'

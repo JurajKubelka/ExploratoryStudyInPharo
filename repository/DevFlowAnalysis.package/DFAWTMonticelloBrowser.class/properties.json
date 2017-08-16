@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-IDE",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTMonticelloBrowser",
-	"pools" : [
-		 ],
 	"super" : "DFAWTBrowser",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-IDE",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTMonticelloBrowser",
+	"type" : "normal"
+}

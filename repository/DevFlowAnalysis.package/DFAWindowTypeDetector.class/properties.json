@@ -1,14 +1,13 @@
 {
-	"category" : "DevFlowAnalysis-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"session" ],
-	"name" : "DFAWindowTypeDetector",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"session"
+	],
+	"name" : "DFAWindowTypeDetector",
+	"type" : "normal"
+}

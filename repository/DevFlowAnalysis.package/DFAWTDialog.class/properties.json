@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTDialog",
-	"pools" : [
-		 ],
 	"super" : "DFAWindowType",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTDialog",
+	"type" : "normal"
+}

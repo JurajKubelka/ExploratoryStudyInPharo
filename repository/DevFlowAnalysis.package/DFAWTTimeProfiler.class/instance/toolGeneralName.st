@@ -1,0 +1,3 @@
+accessing
+toolGeneralName
+	^ 'time-profiler'

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DFACollection",
+	"category" : "DevFlowAnalysis-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWindowEvents",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-Other",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTGhostWindow",
-	"pools" : [
-		 ],
 	"super" : "DFAWindowType",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-Other",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTGhostWindow",
+	"type" : "normal"
+}

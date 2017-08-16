@@ -26,10 +26,16 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 			column: 'Duration'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow duration roundedToSeconds ]
 				width: 63;
+			column: 'Open Time'
+				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow openTime asTime print24 ]
+				width: 63
+				tags: {}
+				sortedBy: [ :a :b | a openTime < b openTime ];
 			column: 'Video Time'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow timeFromBeginningOfVideo roundedToSeconds ];
 			beMultiple;
 			withSmalltalkSearch;
 			showOnly: 250;
 			sendOneOrMultiple;
+			installExportToCSV;
 			helpMessage: 'it executes: self select: [ :each | INPUT ]'

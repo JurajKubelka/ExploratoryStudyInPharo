@@ -1,14 +1,11 @@
 {
-	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "DFAWTMCServerUserCredentials",
-	"pools" : [
-		 ],
 	"super" : "DFAWTMCServerCredentials",
-	"type" : "normal" }
+	"category" : "DevFlowAnalysis-WindowTypes-Dialog",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DFAWTMCServerUserCredentials",
+	"type" : "normal"
+}
