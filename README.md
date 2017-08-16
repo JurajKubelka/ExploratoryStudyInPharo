@@ -29,7 +29,7 @@ Metacello new
 
 And finally use (adopting file paths to your data):
 
-```
+```Smalltalk
 TRAScripts default inspectTranscript.
 DFAScripts default importSessions.
 ```
