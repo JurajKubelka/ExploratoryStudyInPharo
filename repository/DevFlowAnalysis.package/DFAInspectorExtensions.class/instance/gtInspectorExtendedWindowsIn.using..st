@@ -33,6 +33,15 @@ gtInspectorExtendedWindowsIn: composite using: aCollectionOfWindows
 				width: 60;
 			column: 'Tool' evaluated: [ :aDFProfiledWindow | aDFProfiledWindow windowType toolGeneralName ]
 				width: 80;
+			column: 'Debugger' evaluated: [ :aDFProfiledWindow | 
+					aDFProfiledWindow windowType isDebugger
+						ifTrue: [ aDFProfiledWindow isPreDebugger 
+							ifTrue: [ 'preDbg' ]
+							ifFalse: [ aDFProfiledWindow isRealDebugger 
+								ifTrue: [ 'realDbg' ]
+								ifFalse: [ 'interupt' ] ] ]
+						ifFalse: [ 'no' ] ]
+				width: 80;
 			column: 'Duration'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow duration roundedToSeconds asSeconds asString, 's' ]
 				width: 63;

@@ -20,6 +20,8 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 						aDFProfiledWindow windowType isExample ifTrue: [ 'example' ].
 						aDFProfiledWindow windowType isInspector ifTrue: [ 'inspector' ].
 						aDFProfiledWindow windowType isDebugger ifTrue: [ 'debugger' ].
+						aDFProfiledWindow isRealDebugger ifTrue: [ 'realDbg' ].
+						aDFProfiledWindow isPreDebugger ifTrue: [ 'preDbg' ].
 						aDFProfiledWindow windowType isPlayground ifTrue: [ 'playground' ].
 						aDFProfiledWindow windowType isOtherIDE ifTrue: [ 'other' ]. } reject: [ :e | e isNil ]
 					 ];

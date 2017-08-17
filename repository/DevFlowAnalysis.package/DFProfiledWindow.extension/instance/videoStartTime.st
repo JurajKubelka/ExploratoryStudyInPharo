@@ -1,4 +1,4 @@
 *DevFlowAnalysis
 videoStartTime
-	^ (DFAScripts uniqueInstance videoStartTimeAt: self session id)
+	^ (DFAScripts uniqueInstance videoStartTimeAt: (self session ifNotNil: #id))
 			ifNil: [ self openTime ]

@@ -10,31 +10,31 @@ importSessionsFrom: rootDirectory
 
 	"June 2014"
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S2-P2/DFlow-FUEL-AlexTask-3581791366.fuel').
-	session title: 'S10 - Romain - Unfamiliar (Roassal2 Menu Background Color) - ', session title; yourself.
+	session title: 'S2 - Romain - Unfamiliar (Roassal2 Menu Background Color) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S4-P4/DFlow-FUEL-Roassal3dShouldAllowOneTo-3581006914.fuel').
-	session title: 'S1 - Alexandre - Familiar (Roassal3D) - ', session title; yourself.
+	session title: 'S11 - Alexandre - Familiar (Roassal3D) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S6-P6/DFlow-FUEL-JohanFabry-3581596893.fuel').
-	session title: 'S9 - Johan - Familiar (Replace Growl for Live Robot Programming UI) - ', session title; yourself.
+	session title: 'S13 - Johan - Familiar (Replace Growl for Live Robot Programming UI) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S1-P1/DFlow-FUEL-JuampiSession2-3581355161.fuel').
-	session title: 'S7 - Juampi - Unfamiliar (Implement Double Click in Roassal2) - ', session title; yourself.
+	session title: 'S1 - Juampi - Unfamiliar (Implement Double Click in Roassal2) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S3-P3/DFlow-FUEL-MiltonSession2-3582474820.fuel').
-	session title: 'S11 - Milton - Unfamiliar (Roassal2 Menu Background Color, Add edgesToAll: messages) - ', session title; yourself.
+	session title: 'S3 - Milton - Unfamiliar (Roassal2 Menu Background Color, Add edgesToAll: messages) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S5-P5/DFlow-FUEL-EditTheInformationOfThe-3581613056.fuel').
-	session title: 'S8 - Alvaro - Familiar (Panel Analizador SOA Application) - ', session title; yourself.
+	session title: 'S12 - Alvaro - Familiar (Panel Analizador SOA Application) - ', session title; yourself.
 	sessions addSession: session.
 
 	session := (DFScripts importSessionFromPath: rootDirectory / 'PartA-June2014/S7-P7/DFlow-FUEL-FixingSVGPathBugItDoes-3581081368.fuel').
-	session title: 'S2 - Juraj - Unfamiliar (Fix SVGPath movement) - ', session title; yourself.
+	session title: 'S4 - Juraj - Unfamiliar (Fix SVGPath movement) - ', session title; yourself.
 	self cleanSession: session threshold: '2014-06-24T11:28:05.929539-04:00' asDateAndTime.
 	sessions addSession: session.
 
