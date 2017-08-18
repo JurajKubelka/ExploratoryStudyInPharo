@@ -7,6 +7,10 @@ inspectTranscript
 	file exists ifFalse: [ 
 		file := FileLocator documents / 'Research'
 			/ 'ExploratoryStudyInPharo2014' / 'transcripts.org.txt' ].
+	"Part of ICSE paper"
+	file exists ifFalse: [ 
+			file := FileLocator documents / 'Research'
+				/ 'MyResearchPapers' / '2018-ICSE' / 'transcript' / 'transcripts.org.txt' ].
 	"Part of TSE paper"
 	file exists ifFalse: [ 
 			file := FileLocator documents / 'Research'

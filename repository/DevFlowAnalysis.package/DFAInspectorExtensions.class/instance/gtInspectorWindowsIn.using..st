@@ -1,7 +1,7 @@
 gt-inspector-extension
 gtInspectorWindowsIn: composite using: aCollectionOfWindows
 	^ composite table
-			title: 'Windows';
+			title: 'Windows' translated;
 			display: [ aCollectionOfWindows value ];
 			column: 'Session'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow sessionID ]
@@ -35,6 +35,7 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 				sortedBy: [ :a :b | a openTime < b openTime ];
 			column: 'Video Time'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow timeFromBeginningOfVideo roundedToSeconds ];
+			selectionAct: [ :presentation | presentation selection ifNotNil: #jumpToVideo ] entitled: 'Open in QuickTime Player';
 			beMultiple;
 			withSmalltalkSearch;
 			showOnly: 250;
