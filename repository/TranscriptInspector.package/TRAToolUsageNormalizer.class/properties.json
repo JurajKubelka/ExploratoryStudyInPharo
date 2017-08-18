@@ -1,16 +1,15 @@
 {
-	"category" : "TranscriptInspector-Utils",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"intervals",
 		"from",
-		"to" ],
+		"to"
+	],
 	"name" : "TRAToolUsageNormalizer",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,14 +1,13 @@
 {
-	"category" : "TranscriptInspector-Sillito",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"count" ],
-	"name" : "TRASillitoQuestion",
-	"pools" : [
-		 ],
 	"super" : "TRAAbstractSillitoQuestion",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"count"
+	],
+	"name" : "TRASillitoQuestion",
+	"type" : "normal"
+}

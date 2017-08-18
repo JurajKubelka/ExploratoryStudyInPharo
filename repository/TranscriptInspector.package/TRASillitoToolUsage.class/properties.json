@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Export",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TRASillitoToolUsage",
-	"pools" : [
-		 ],
 	"super" : "TRAToolUsage",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRASillitoToolUsage",
+	"type" : "normal"
+}

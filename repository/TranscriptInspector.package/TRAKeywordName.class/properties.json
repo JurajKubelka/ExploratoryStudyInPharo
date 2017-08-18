@@ -1,15 +1,14 @@
 {
-	"category" : "TranscriptInspector-Utils",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"keywordName",
-		"keywords" ],
+		"keywords"
+	],
 	"name" : "TRAKeywordName",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

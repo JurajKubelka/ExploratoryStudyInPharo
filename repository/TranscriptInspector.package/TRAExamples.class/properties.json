@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JurajKubelka 8/12/2016 21:56",
-	"instvars" : [
-		 ],
-	"name" : "TRAExamples",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRAExamples",
+	"type" : "normal"
+}

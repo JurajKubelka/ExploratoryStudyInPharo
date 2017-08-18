@@ -1,11 +1,6 @@
 {
-	"category" : "TranscriptInspector-Parsers",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "TOrgParseRule classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+	"classvars" : [ ],
 	"instvars" : [
 		"item",
 		"time",
@@ -20,10 +15,14 @@
 		"lineEnd",
 		"shortGeneralQuestion",
 		"longGeneralQuestion",
-		"keyword" ],
+		"keyword"
+	],
 	"name" : "TRAItemGrammar",
-	"pools" : [
-		 ],
+	"commentStamp" : "",
 	"super" : "PPCompositeParser",
 	"traitcomposition" : "TOrgParseRule",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "TranscriptInspector-Parsers"
+}

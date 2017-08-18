@@ -1,15 +1,14 @@
 {
-	"category" : "TranscriptInspector-Sillito",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"question",
-		"subgroup" ],
+		"subgroup"
+	],
 	"name" : "TRASillitoQuestionInGroup",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

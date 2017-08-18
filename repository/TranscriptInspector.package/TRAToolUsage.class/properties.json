@@ -1,16 +1,15 @@
 {
-	"category" : "TranscriptInspector-Export",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"sessions",
 		"questions",
-		"sillito" ],
+		"sillito"
+	],
 	"name" : "TRAToolUsage",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

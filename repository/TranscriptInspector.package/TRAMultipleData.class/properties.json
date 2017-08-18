@@ -1,14 +1,13 @@
 {
-	"category" : "TranscriptInspector-Roassal",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"colorPalette" ],
-	"name" : "TRAMultipleData",
-	"pools" : [
-		 ],
 	"super" : "RTMultipleData",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Roassal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colorPalette"
+	],
+	"name" : "TRAMultipleData",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Sillito",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TRASillitoBothToolUsageType",
-	"pools" : [
-		 ],
 	"super" : "TRASillitoToolUsageType",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRASillitoBothToolUsageType",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Sillito",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TRASillitoEFPType",
-	"pools" : [
-		 ],
 	"super" : "TRASillitoGroupType",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Sillito",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRASillitoEFPType",
+	"type" : "normal"
+}

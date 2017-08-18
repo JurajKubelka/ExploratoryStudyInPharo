@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Parsers",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TRAItemParser",
-	"pools" : [
-		 ],
 	"super" : "TRAItemGrammar",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Parsers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRAItemParser",
+	"type" : "normal"
+}

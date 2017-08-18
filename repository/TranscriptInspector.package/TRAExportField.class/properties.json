@@ -1,15 +1,14 @@
 {
-	"category" : "TranscriptInspector-Export",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JurajKubelka 11/24/2016 09:33",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"export",
-		"question" ],
+		"question"
+	],
 	"name" : "TRAExportField",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

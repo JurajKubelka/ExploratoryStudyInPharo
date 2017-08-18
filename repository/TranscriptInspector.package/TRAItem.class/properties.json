@@ -1,17 +1,16 @@
 {
-	"category" : "TranscriptInspector-Nodes",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TRANode",
+	"category" : "TranscriptInspector-Nodes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"timespan",
 		"space",
 		"parts",
-		"end" ],
+		"end"
+	],
 	"name" : "TRAItem",
-	"pools" : [
-		 ],
-	"super" : "TRANode",
-	"type" : "normal" }
+	"type" : "normal"
+}

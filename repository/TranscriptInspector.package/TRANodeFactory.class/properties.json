@@ -1,14 +1,13 @@
 {
-	"category" : "TranscriptInspector-Parsers",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"itemParser" ],
-	"name" : "TRANodeFactory",
-	"pools" : [
-		 ],
 	"super" : "OrgNodeFactory",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Parsers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"itemParser"
+	],
+	"name" : "TRANodeFactory",
+	"type" : "normal"
+}

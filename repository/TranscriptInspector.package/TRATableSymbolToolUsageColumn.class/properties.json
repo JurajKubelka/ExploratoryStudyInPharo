@@ -1,14 +1,11 @@
 {
-	"category" : "TranscriptInspector-Export",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JurajKubelka 11/30/2016 09:38",
-	"instvars" : [
-		 ],
-	"name" : "TRATableSymbolToolUsageColumn",
-	"pools" : [
-		 ],
 	"super" : "TRATableColumn",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRATableSymbolToolUsageColumn",
+	"type" : "normal"
+}

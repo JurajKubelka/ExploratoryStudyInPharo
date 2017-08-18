@@ -1,14 +1,13 @@
 {
-	"category" : "TranscriptInspector-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"source" ],
-	"name" : "TRAItemGrammarTest",
-	"pools" : [
-		 ],
 	"super" : "PPCompositeParserTest",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source"
+	],
+	"name" : "TRAItemGrammarTest",
+	"type" : "normal"
+}

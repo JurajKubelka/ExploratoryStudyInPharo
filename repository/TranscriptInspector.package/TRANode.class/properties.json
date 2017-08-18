@@ -1,17 +1,16 @@
 {
-	"category" : "TranscriptInspector-Nodes",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "TOrgRecompileNode classTrait + TOrgAttributes classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+	"classvars" : [ ],
 	"instvars" : [
 		"attributes",
-		"parent" ],
+		"parent"
+	],
 	"name" : "TRANode",
-	"pools" : [
-		 ],
+	"commentStamp" : "",
 	"super" : "Object",
 	"traitcomposition" : "TOrgRecompileNode + TOrgAttributes",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "TranscriptInspector-Nodes"
+}

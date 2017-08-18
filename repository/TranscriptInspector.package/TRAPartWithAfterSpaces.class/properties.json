@@ -1,14 +1,13 @@
 {
-	"category" : "TranscriptInspector-Nodes",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"after" ],
-	"name" : "TRAPartWithAfterSpaces",
-	"pools" : [
-		 ],
 	"super" : "TRAItemPart",
-	"type" : "normal" }
+	"category" : "TranscriptInspector-Nodes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"after"
+	],
+	"name" : "TRAPartWithAfterSpaces",
+	"type" : "normal"
+}

@@ -1,18 +1,17 @@
 {
-	"category" : "TranscriptInspector-Export",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JurajKubelka 11/29/2016 11:16",
+	"super" : "Object",
+	"category" : "TranscriptInspector-Export",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"writer",
 		"sessions",
 		"questions",
 		"sillitoAll",
-		"tableColumns" ],
+		"tableColumns"
+	],
 	"name" : "TRAQuestionsExport",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
