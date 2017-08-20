@@ -2,4 +2,5 @@
 computeAttributes
 	self 
 		computeWindowTypes;
-		assignSessionsForWindows.
+		assignSessionsForWindows;
+		linkPreAndRealDebuggers.

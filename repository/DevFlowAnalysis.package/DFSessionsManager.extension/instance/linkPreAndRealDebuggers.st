@@ -1,0 +1,3 @@
+*DevFlowAnalysis
+linkPreAndRealDebuggers
+	DFAScripts default linkPreAndRealDebuggersForSessionManager: self

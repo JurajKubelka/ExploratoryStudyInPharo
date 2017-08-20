@@ -10,7 +10,7 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow label ];
 			column: 'Type'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow windowType ifNotNil: [ :aType | aType humanReadableString ] ]	
-				width: 300
+				width: 450
 				tags: [ :aDFProfiledWindow |
 					{ 	aDFProfiledWindow windowType isDialog ifTrue: [ 'dialog' ].
 						aDFProfiledWindow windowType isRealWindow ifTrue: [ 'window' ].
@@ -22,6 +22,8 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 						aDFProfiledWindow windowType isDebugger ifTrue: [ 'debugger' ].
 						aDFProfiledWindow isRealDebugger ifTrue: [ 'realDbg' ].
 						aDFProfiledWindow isPreDebugger ifTrue: [ 'preDbg' ].
+						aDFProfiledWindow hasPreDebugger ifTrue: [ 'hasPreDbg' ].
+						aDFProfiledWindow hasRealDebugger ifTrue: [ 'hasRealDbg' ].
 						aDFProfiledWindow windowType isPlayground ifTrue: [ 'playground' ].
 						aDFProfiledWindow windowType isOtherIDE ifTrue: [ 'other' ]. } reject: [ :e | e isNil ]
 					 ];
