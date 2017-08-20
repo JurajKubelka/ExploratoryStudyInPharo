@@ -1,4 +1,4 @@
 *DevFlowAnalysis
 duration
-	^ (self closeTime ifNil: [ ^ Duration new ]) - 
-			(self openTime ifNil: [ ^ Duration new ])
+	^ (self closeTime ifNil: [ self session endTime ]) - 
+			(self openTime ifNil: [ ^ self session startTime ])

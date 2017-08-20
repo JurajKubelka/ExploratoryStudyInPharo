@@ -5,7 +5,9 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 			display: [ aCollectionOfWindows value ];
 			column: 'Session'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow sessionID ]
-				width: 53;
+				width: 53
+				tags: {}
+				sortedBy: [ :a :b | a sessionOrder < b sessionOrder ];
 			column: 'Name'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow label ];
 			column: 'Type'

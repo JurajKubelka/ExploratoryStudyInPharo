@@ -13,7 +13,7 @@ scatterplotWindowDurationPerTool: collectionOfWindows
 		color: (Color blue alpha: 0.3);
 		size: 5.
 	data
-		points: self;
+		points: collectionOfWindows;
 		x: [ :m | m duration asSeconds ];
 		y: [ :m | toolNames indexOf: m windowType toolGeneralName ].
 	builder add: data.

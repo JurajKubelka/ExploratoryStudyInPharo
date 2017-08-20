@@ -5,7 +5,7 @@ boxplotWindowDurationPerTool: collectionOfWindows
 		y: window duration (from opening to closing action)"
 	| toolNames builder |
 
-	toolNames := (self collect: [ :e | e windowType toolGeneralName ] as: Set) asOrderedCollection.
+	toolNames := (collectionOfWindows collect: [ :e | e windowType toolGeneralName ] as: Set) asOrderedCollection.
 
 	builder := RTGrapher new.
 	builder extent: 1200 @ 600.
@@ -14,7 +14,7 @@ boxplotWindowDurationPerTool: collectionOfWindows
 		data := RTBoxPlotDataSet new.
 		data showMean: true.
 		data meanShape color: (Color blue alpha: 0.4).
-		model := (self select: [ :e | e windowType toolGeneralName = toolName ]).
+		model := (collectionOfWindows select: [ :e | e windowType toolGeneralName = toolName ]).
 		data points: model.
 		data model: model.
 		data y: [ :window | window duration asSeconds ].

@@ -36,9 +36,9 @@ gtInspectorExtendedWindowsIn: composite using: aCollectionOfWindows
 			column: 'Debugger' evaluated: [ :aDFProfiledWindow | 
 					aDFProfiledWindow windowType isDebugger
 						ifTrue: [ aDFProfiledWindow isPreDebugger 
-							ifTrue: [ 'preDbg' ]
+							ifTrue: [ aDFProfiledWindow hasRealDebugger ifTrue: [ 'preDbg+' ] ifFalse: [ 'preDbg-' ] ]
 							ifFalse: [ aDFProfiledWindow isRealDebugger 
-								ifTrue: [ 'realDbg' ]
+								ifTrue: [ aDFProfiledWindow hasPreDebugger ifTrue: [ 'realDbg+' ] ifFalse: [ 'realDbg-' ] ]
 								ifFalse: [ 'interupt' ] ] ]
 						ifFalse: [ 'no' ] ]
 				width: 80;
