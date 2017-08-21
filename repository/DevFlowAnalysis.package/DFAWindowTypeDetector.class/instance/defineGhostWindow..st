@@ -6,12 +6,12 @@ defineGhostWindow: aDFProfiledWindow
 		aDFProfiledWindow label = 'GL viewport' ]) 
 			ifTrue: [ self define: aDFProfiledWindow as: DFAWTGhostWindow default ].
 	"T10a - halt once"
-	(aDFProfiledWindow id = 970194944 and: [ aDFProfiledWindow sessionID = #T10a ])
+	(aDFProfiledWindow id = 970194944 and: [ aDFProfiledWindow label = 'Window' ])
 		ifTrue: [ self define: aDFProfiledWindow as: DFAWTSpecDebugger default ].
-	(aDFProfiledWindow id = 1038090240 and: [ aDFProfiledWindow sessionID = #T10a ])
+	(aDFProfiledWindow id = 1038090240 and: [ aDFProfiledWindow label = 'Window' ])
 		ifTrue: [ self define: aDFProfiledWindow as: DFAWTSpecDebugger default ].
 	"T10b - halt once"
-	(aDFProfiledWindow id = 762839040 and: [ aDFProfiledWindow sessionID = #T10b ])
+	(aDFProfiledWindow id = 762839040 and: [ aDFProfiledWindow label = 'Window' ])
 		ifTrue: [ self define: aDFProfiledWindow as: DFAWTSpecDebugger default ].
-	(aDFProfiledWindow id = 364904448 and: [ aDFProfiledWindow sessionID = #T10b ])
+	(aDFProfiledWindow id = 364904448 and: [ aDFProfiledWindow label = 'Window' ])
 		ifTrue: [ self define: aDFProfiledWindow as: DFAWTSpecDebugger default ].

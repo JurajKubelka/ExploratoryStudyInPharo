@@ -5,7 +5,7 @@ scatterplotWindowDurationPerTool: collectionOfWindows
 		y: tool type (code browser, debugger, etc.)"
 	| toolNames builder data |
 
-	toolNames := (collectionOfWindows collect: [ :e | e windowType toolGeneralName ] as: Set) 		asOrderedCollection.
+	toolNames := (collectionOfWindows collect: [ :e | e windowType toolGeneralName ] as: Set) asSortedCollection asOrderedCollection.
 	builder := RTGrapher new.
 	builder extent: 1200 @ 600. 
 	data := RTData new.

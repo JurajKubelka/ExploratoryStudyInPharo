@@ -1,0 +1,3 @@
+testing
+isPreDebugger
+	^ true

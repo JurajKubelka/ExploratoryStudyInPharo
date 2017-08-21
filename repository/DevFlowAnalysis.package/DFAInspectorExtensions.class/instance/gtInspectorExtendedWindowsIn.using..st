@@ -43,7 +43,7 @@ gtInspectorExtendedWindowsIn: composite using: aCollectionOfWindows
 						ifFalse: [ 'no' ] ]
 				width: 80;
 			column: 'Duration'
-				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow duration roundedToSeconds asSeconds asString, 's' ]
+				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow duration roundedToSeconds asSeconds ]
 				width: 63;
 			column: 'Open Time'
 				evaluated: [ :aDFProfiledWindow | aDFProfiledWindow openTime asTime print24 ]

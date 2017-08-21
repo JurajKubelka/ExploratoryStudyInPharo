@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DFAWTDebugger",
+	"name" : "DFAWTPreDebugger",
 	"type" : "normal"
 }

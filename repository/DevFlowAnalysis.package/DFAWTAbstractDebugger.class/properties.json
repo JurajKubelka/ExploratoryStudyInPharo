@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "DFAWTAbstractDebugger",
+	"super" : "DFAWTIDE",
 	"category" : "DevFlowAnalysis-WindowTypes-IDE",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DFAWTDebugger",
+	"name" : "DFAWTAbstractDebugger",
 	"type" : "normal"
 }

@@ -5,7 +5,7 @@ boxplotWindowDurationPerTool: collectionOfWindows
 		y: window duration (from opening to closing action)"
 	| toolNames builder |
 
-	toolNames := (collectionOfWindows collect: [ :e | e windowType toolGeneralName ] as: Set) asOrderedCollection.
+	toolNames := (collectionOfWindows collect: [ :e | e windowType toolGeneralName ] as: Set) asSortedCollection asOrderedCollection.
 
 	builder := RTGrapher new.
 	builder extent: 1200 @ 600.
