@@ -22,6 +22,10 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 						aDFProfiledWindow windowType isExample ifTrue: [ 'example' ].
 						aDFProfiledWindow windowType isInspector ifTrue: [ 'inspector' ].
 						aDFProfiledWindow windowType isDebugger ifTrue: [ 'debugger' ].
+						aDFProfiledWindow isUserInterrupt ifTrue: [ 'int' ].
+						(aDFProfiledWindow label beginsWith: 'Halt') ifTrue: [ 'halt' ].
+						(aDFProfiledWindow label beginsWith: 'MessageNotUnderstood') ifTrue: [ 'DNU' ].
+						(aDFProfiledWindow label beginsWith: 'TestFailure') ifTrue: [ 'TDD' ].
 						aDFProfiledWindow isRealDebugger ifTrue: [ 'realDbg' ].
 						aDFProfiledWindow isPreDebugger ifTrue: [ 'preDbg' ].
 						aDFProfiledWindow hasPreDebugger ifTrue: [ 'hasPreDbg' ].
@@ -43,6 +47,6 @@ gtInspectorWindowsIn: composite using: aCollectionOfWindows
 			beMultiple;
 			withSmalltalkSearch;
 			showOnly: 250;
-			sendOneOrMultiple;
+			sendOneOrMultipleAs: DFAWindows;
 			installExportToCSV;
 			helpMessage: 'it executes: self select: [ :each | INPUT ]'
