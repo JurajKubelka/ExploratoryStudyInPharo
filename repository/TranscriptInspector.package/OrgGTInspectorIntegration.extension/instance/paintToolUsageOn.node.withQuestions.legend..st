@@ -1,6 +1,6 @@
 *TranscriptInspector-toolusage-timeline
 paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolean
-	| builder keywords globalStart set keywordColors keywordNormalizer questions questionSet questionNormalizer toolUsageNormalizer legend staticColor dynamicColor otherColor missOpportunities |
+	| builder keywords globalStart set keywordNormalizer questions questionSet questionNormalizer toolUsageNormalizer legend staticColor dynamicColor otherColor |
 	keywords := aNode toolUsageKeywords reject: #isRestTime.
 	globalStart := (keywords detectMin: [ :each | each start ]) ifNotNil: #start.
 
@@ -81,6 +81,7 @@ paintToolUsageOn: aView node: aNode withQuestions: aBoolean legend: legendBoolea
 		title: 'Time [minutes:seconds]';
 		color: Color black.
 	builder axisY title: 'Session'; color: Color black.
+	builder timelineLabelBuilder shape color: Color black.
 	
 	"Miss Opportunity"
 	"
