@@ -3,13 +3,12 @@ paintGeneralQuestionsPerTimeSlotOn: aView node: aNode
 	"Paint percentage of question occurrences in a timeline, divided to time blocks per 15 minutes.
 	x: time block
 	y: question id"
-	| sillito positions questions groupedQuestions minDate maxNumber b ds |
+	| sillito positions questions groupedQuestions minDate b |
 	sillito := TRASillito allSillito questions.
 	positions := sillito collect: [ :question | question shortName asString ].
-	questions := self generalQuestions reject: [ :question | (positions includes: question questionId) not ].
+	questions := aNode generalQuestions reject: [ :question | (positions includes: question questionId) not ].
 	minDate := (questions detectMin: [ :question | question start ]) start.
 	groupedQuestions := questions groupedBy: [ :eachQuestion | eachQuestion questionId ].
-	maxNumber := 100.
 	b := RTStackBarPlot new.
 	b interaction popupText.
 	b colorPalette colors: (Array with: Color blue with: Color lightBlue).
