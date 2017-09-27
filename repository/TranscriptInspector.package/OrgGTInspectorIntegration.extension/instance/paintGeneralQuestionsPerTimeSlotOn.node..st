@@ -3,10 +3,11 @@ paintGeneralQuestionsPerTimeSlotOn: aView node: aNode
 	"Paint percentage of question occurrences in a timeline, divided to time blocks per 15 minutes.
 	x: time block
 	y: question id"
-	| sillito positions questions groupedQuestions minDate b |
-	sillito := TRASillito allSillito questions.
-	positions := sillito collect: [ :question | question shortName asString ].
-	questions := aNode generalQuestions reject: [ :question | (positions includes: question questionId) not ].
+	| sessions sillito positions questions groupedQuestions minDate b |
+	sessions := (aNode sessionHeadings" select: #isUnfamiliarSession") as: OrgCollection.
+	sillito := (TRASillito default divideQuestions: sessions generalQuestions) abridge.
+	positions := sillito questions collect: [ :question | question shortName asString ].
+	questions := sillito questions flatCollect: #questions.
 	minDate := (questions detectMin: [ :question | question start ]) start.
 	groupedQuestions := questions groupedBy: [ :eachQuestion | eachQuestion questionId ].
 	b := RTStackBarPlot new.
@@ -22,12 +23,13 @@ paintGeneralQuestionsPerTimeSlotOn: aView node: aNode
 					question start - minDate < 45 minutes ] ].
 			timeFour := group select: [ :question | question start - minDate >= 45 minutes ].
 			sum :=  timeOne size + timeTwo size + timeThree size + timeFour size.
-			b add: { timeOne size / sum. timeTwo size / sum . timeThree size / sum. timeFour size / sum } title: eachId. ]
+			b 
+				add: { timeOne size / sum. timeTwo size / sum . timeThree size / sum. timeFour size / sum } 
+				title: 'Question ', eachId asString, ' (', sum asString, ' occurrences)'. ]
 	 ].
 	b barWidth: 500 height: 20.
 	b 
 		addLabelToBars: [ :assoc | (assoc key * 100) asInteger asString , '%' ] 
-		if: [ :assoc | assoc key > 0.2 ] color: Color white.
+		if: [ :assoc | assoc key > 0.1 ] color: Color white.
 	b build.
 	^ b view
-
