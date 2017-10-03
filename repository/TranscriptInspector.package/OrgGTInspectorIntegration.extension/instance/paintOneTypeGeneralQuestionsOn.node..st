@@ -1,13 +1,11 @@
 *TranscriptInspector-questions
 paintOneTypeGeneralQuestionsOn: aView node: aNode
 
-	| builder ds sillito total total2 dataColor sillitoColor sillito2 groups |
+	| builder ds sillito total total2 sillito2 groups |
 	sillito := aNode codeType sillito: aNode generalQuestions.
 	sillito2 := aNode codeType sillito.
 	total := sillito numberOfQuestions.
 	total2 := sillito2 numberOfQuestions.
-	dataColor := Color lightGray.
-	sillitoColor := Color black.
 	groups := sillito groups withIndexCollect: [ :eachGroup :index | { eachGroup. sillito2 groups at: index } ].
 
 	builder := RTGrapher new.

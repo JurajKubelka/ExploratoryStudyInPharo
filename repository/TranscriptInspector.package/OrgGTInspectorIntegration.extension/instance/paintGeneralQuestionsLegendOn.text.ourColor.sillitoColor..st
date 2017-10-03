@@ -7,6 +7,6 @@ paintGeneralQuestionsLegendOn: aView text: aString ourColor: dataColor sillitoCo
 	legend view: aView.
 
 	"legend addText: aString."
-	legend addColor: dataColor text: 'Our Session(s)'.
+	legend addColor: dataColor text: 'Our Sessions'.
 	legend addColor: sillitoColor text: 'Sillito Sessions'.
 	legend build
