@@ -1,4 +1,4 @@
-*TranscriptInspector-toolusage-questions
+*TranscriptInspector-toolusage-boxplot
 paintBoxPlotToolUsagePerQuestionViewIn: aView node: aNode 
 	| builder sillito data deco questions |
 	sillito := (aNode codeType sillito: aNode fullyDefinedQeneralQuestions) abridge.

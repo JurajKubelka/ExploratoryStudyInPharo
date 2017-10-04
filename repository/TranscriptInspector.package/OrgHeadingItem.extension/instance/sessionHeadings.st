@@ -1,4 +1,6 @@
 *TranscriptInspector
 sessionHeadings
-	^ self selectHeadings: [ :eachOrgHeadingItem | 
-			eachOrgHeadingItem isSessionHeading ]
+	^ self isSessionHeading 
+		ifTrue: [ Array with: self ]
+		ifFalse: [ self selectHeadings: [ :eachOrgHeadingItem | 
+			eachOrgHeadingItem isSessionHeading ] ]

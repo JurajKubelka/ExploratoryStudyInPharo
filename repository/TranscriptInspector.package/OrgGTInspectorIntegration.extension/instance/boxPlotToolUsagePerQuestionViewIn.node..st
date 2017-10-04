@@ -1,4 +1,4 @@
-*TranscriptInspector-toolusage-questions
+*TranscriptInspector-toolusage-boxplot
 boxPlotToolUsagePerQuestionViewIn: composite node: aNode 
 	^ composite roassal2
 			title: 'Box Plot Tool Usage Per Question';
