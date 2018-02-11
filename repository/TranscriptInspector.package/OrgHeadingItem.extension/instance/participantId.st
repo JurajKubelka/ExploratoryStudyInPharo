@@ -1,3 +1,3 @@
 *TranscriptInspector
 participantId
-	^ self tseParticipantId ifEmpty: [ self plateauParticipantId ]
+	^ self sessionHeading propertyValueAt: #'PARTICIPANT-ID'
