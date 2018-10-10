@@ -1,0 +1,3 @@
+*TranscriptInspector
+parentGeneralQuestionsFor: aTRAShortGeneralQuestion 
+	^ #()
