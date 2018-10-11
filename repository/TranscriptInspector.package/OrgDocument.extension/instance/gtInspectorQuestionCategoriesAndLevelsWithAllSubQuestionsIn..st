@@ -1,5 +1,5 @@
 *TranscriptInspector
 gtInspectorQuestionCategoriesAndLevelsWithAllSubQuestionsIn: composite
-	<gtInspectorPresentationOrder: 4>
+	<gtInspectorPresentationOrder: 5>
 	^ TRAInspectorIntegration default
-		questionCategoriesAndLevelsWithAllSubQuestionsIn: composite node: self
+		categoryNodeTypes: composite node: self

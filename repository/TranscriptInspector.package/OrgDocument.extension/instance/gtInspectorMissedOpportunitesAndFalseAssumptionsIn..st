@@ -1,5 +1,5 @@
 *TranscriptInspector
 gtInspectorMissedOpportunitesAndFalseAssumptionsIn: composite
-	<gtInspectorPresentationOrder: 3>
+	<gtInspectorPresentationOrder: 9>
 	^ TRAInspectorIntegration default
 		missedOpportunitesAndFalseAssumptionsIn: composite node: self
