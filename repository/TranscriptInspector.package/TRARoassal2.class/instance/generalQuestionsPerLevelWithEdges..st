@@ -12,7 +12,7 @@ generalQuestionsPerLevelWithEdges: aNode
 	edgeBuilder connectFrom: #yourself toAll: [ :eachGroup | | subGroups |
 		subGroups := Set new.
 		eachGroup do: [ :eachQuestion |
-			eachQuestion subGeneralQuestions do: [ :eachSubQuestion |
+			eachQuestion generalOneLevelSubQuestions do: [ :eachSubQuestion |
 				groups do: [ :eachGroup2 | 
 					(eachGroup2 anySatisfy: [ :aQuestionInGroup | aQuestionInGroup question = eachSubQuestion ])
 						ifTrue: [ subGroups add: eachGroup2 ] ] ]

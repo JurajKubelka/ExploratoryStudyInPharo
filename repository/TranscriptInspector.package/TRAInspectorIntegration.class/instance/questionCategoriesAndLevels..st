@@ -1,26 +1,39 @@
-categories - levels
+categories with one-level sub-categories
 questionCategoriesAndLevels: aNode
-	"| Parent Category Level | Parent Category | Child Category | Questions |"
+	"| Parent Category Level | Parent Category | Direct Child Category in ((Parent Category Level) + 1) Level | Questions (Edges) |"
 	| aTable |
 	aTable := Dictionary new.
-	aNode generalQuestions do: [ :eachQuestion | 
-		| theParentQuestions |
-		theParentQuestions := eachQuestion parentGeneralQuestions.
-		theParentQuestions do: [ :eachParentQuestion |
-			| aLevel aRowId aLine aSilitoQuestion |
-			aLevel := eachParentQuestion level.
+	aNode generalQuestions do: [ :eachParentQuestion | 
+		| aLevel theOneLevelSubQuestions |
+		aLevel := eachParentQuestion level.
+		theOneLevelSubQuestions := eachParentQuestion generalOneLevelSubQuestions.
+		theOneLevelSubQuestions ifEmpty: [
+			| aRowId aLine |
 			aRowId := aLevel asString, '-', 
-				(eachParentQuestion groupName select: #isUppercase) asString, '-', 
-				(eachQuestion groupName select: #isUppercase) asString.
-			aSilitoQuestion := eachParentQuestion sillitoQuestion.
+				(eachParentQuestion groupName select: #isUppercase) asString, 
+				'None', '-'.
 			aLine := aTable at: aRowId 
 				ifAbsentPut: [ 
 					(Array new: 4)
 						at: 1 put: aLevel;	
 						at: 2 put: (eachParentQuestion groupName select: #isUppercase);
-						at: 3 put: (eachQuestion groupName select: #isUppercase);
+						at: 3 put: 'None';
 						at: 4 put: OrderedCollection new;
 						yourself ].
-			(aLine at: 4) add: (eachParentQuestion -> eachQuestion).
+			(aLine at: 4) add: (eachParentQuestion -> nil) ].
+		theOneLevelSubQuestions do: [ :eachSubQuestion |
+			| aRowId aLine |
+			aRowId := aLevel asString, '-', 
+				(eachParentQuestion groupName select: #isUppercase) asString, 
+				(eachSubQuestion groupName select: #isUppercase) asString, '-'.
+			aLine := aTable at: aRowId 
+				ifAbsentPut: [ 
+					(Array new: 4)
+						at: 1 put: aLevel;	
+						at: 2 put: (eachParentQuestion groupName select: #isUppercase);
+						at: 3 put: (eachSubQuestion groupName select: #isUppercase);
+						at: 4 put: OrderedCollection new;
+						yourself ].
+			(aLine at: 4) add: (eachParentQuestion -> eachSubQuestion).
 		] ].
 	^ aTable values

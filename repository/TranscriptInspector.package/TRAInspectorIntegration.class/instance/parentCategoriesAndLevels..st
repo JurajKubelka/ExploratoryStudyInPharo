@@ -1,4 +1,4 @@
-categories - levels
+categories with one-level sub-categories
 parentCategoriesAndLevels: aNode
 	"| Parent Category Level | Parent Category | Child Category | Questions |"
 	^ (self questionCategoriesAndLevels: aNode) groupedBy: [ :eachLine | 

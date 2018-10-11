@@ -1,4 +1,4 @@
 accessing
-allGeneralSubQuestions
+generalAnyLevelSubQuestions
 	^ Array streamContents: [ :aStream | 
 		self allGeneralSubQuestionsTo: aStream ]

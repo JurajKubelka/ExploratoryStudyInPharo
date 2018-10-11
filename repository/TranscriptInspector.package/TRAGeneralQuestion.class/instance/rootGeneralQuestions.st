@@ -1,3 +1,3 @@
 accessing
 rootGeneralQuestions
-	^ self subGeneralQuestions
+	^ self generalOneLevelSubQuestions

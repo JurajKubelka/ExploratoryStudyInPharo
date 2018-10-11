@@ -1,5 +1,5 @@
 accessing
 allGeneralSubQuestionsTo: aStream
-	self subGeneralQuestions do: [ :eachSubQuestion | 
+	self generalOneLevelSubQuestions do: [ :eachSubQuestion | 
 		aStream nextPut: eachSubQuestion.
 		eachSubQuestion allGeneralSubQuestionsTo: aStream ].

@@ -1,11 +1,11 @@
-categories - levels
+categories with one-level sub-categories
 questionCategoriesAndLevelsIn: composite node: aNode
 	| table compositeTable |
 	table := self questionCategoriesAndLevels: aNode.
 	table ifEmpty: [ ^ self ].
 	compositeTable := composite table.
 	compositeTable
-		title: 'Level Categories';
+		title: 'One-Level Sub-Categories';
 		display: [ table ];
 		column: 'Parent Level'
 			evaluated: [ :line | line first ]

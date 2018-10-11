@@ -1,11 +1,11 @@
-category questions with all sub-questions
+categories with all any-level sub-categories
 questionCategoriesAndLevelsWithAllSubQuestionsIn: composite node: aNode
 	| table compositeTable |
 	table := self questionCategoriesAndLevelsWithAllSubQuestions: aNode.
 	table ifEmpty: [ ^ self ].
 	compositeTable := composite table.
 	compositeTable
-		title: 'Sub-Categories';
+		title: 'All-Level Sub-Categories';
 		display: [ table ];
 		column: 'Parent Level'
 			evaluated: [ :line | line first ]

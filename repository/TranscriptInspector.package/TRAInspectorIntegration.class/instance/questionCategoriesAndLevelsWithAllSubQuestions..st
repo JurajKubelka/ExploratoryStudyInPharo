@@ -1,11 +1,11 @@
-category questions with all sub-questions
+categories with all any-level sub-categories
 questionCategoriesAndLevelsWithAllSubQuestions: aNode
 	"| Parent Category Level | Parent Category | Child Category | Array of Parent Question -> Sub-Question |"
 	| aTable |
 	aTable := Dictionary new.
 	aNode generalQuestions do: [ :eachParentQuestion | 
 		| allSubQuestions |
-		allSubQuestions := eachParentQuestion allGeneralSubQuestions.
+		allSubQuestions := eachParentQuestion generalAnyLevelSubQuestions.
 		allSubQuestions ifEmpty: [
 			| aLevel aRowId aLine |
 			aLevel := eachParentQuestion level.

@@ -4,7 +4,7 @@ generalQuestionsHierarchyOn: composite node: aNode
 			title: 'GQ Hierarchy';
 			display: [ aNode rootGeneralQuestions ];
 			when: [ aNode rootGeneralQuestions notEmpty ];
-			children: [ :aQuestion | aQuestion subGeneralQuestions ];
+			children: [ :aQuestion | aQuestion generalOneLevelSubQuestions ];
 			format: [ :aQuestion | String streamContents: [ :aStream |
 					aQuestion printTimespanOn: aStream. 
 					aStream space.

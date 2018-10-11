@@ -1,3 +1,3 @@
 *TranscriptInspector
-subGeneralQuestions
+generalOneLevelSubQuestions
 	^ self sublist directGeneralQuestions

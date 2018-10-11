@@ -1,4 +1,4 @@
-categories - levels
+categories with one-level sub-categories
 questionsWithoutParentsAndChildren: aNode
 	"| Category | Questions |"
 	| anArrayA anArrayB |
