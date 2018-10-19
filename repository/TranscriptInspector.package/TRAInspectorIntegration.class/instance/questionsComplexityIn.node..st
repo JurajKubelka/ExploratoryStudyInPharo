@@ -7,16 +7,16 @@ questionsComplexityIn: composite node: aNode
 		column: 'Question'
 			evaluated: [ :line | line shortName ]
 			width: 120;
-		column: 'Group'
+		column: 'Category'
 			evaluated: [ :line | line mainGroupName ]
 			width: 100;
-		column: 'Familiar'
-			evaluated: [ :line | line sessionHeading isFamiliarSession ifTrue: [ 1 ] ifFalse: [ 0 ] ]
+		column: 'Codebase'
+			evaluated: [ :line | line sessionHeading isFamiliarSession ifTrue: [ 'Familiar' ] ifFalse: [ 'Unfamiliar' ] ]
 			width: 100;
 		column: 'Level'
 			evaluated: [ :line | line level ]
 			width: 100;
-		column: 'Any-Level Sub-Questions'
+		column: 'Number of Participant Sub-Questions'
 			evaluated: [ :line | line generalAnyLevelSubQuestions size ]
 			width: 120;
 		column: 'Root Questions'
