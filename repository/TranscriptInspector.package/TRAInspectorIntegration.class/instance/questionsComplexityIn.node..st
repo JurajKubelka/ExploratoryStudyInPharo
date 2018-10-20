@@ -38,8 +38,10 @@ questionsComplexityIn: composite node: aNode
 			evaluated: [ :line | line generalAnyLevelSubQuestions count: [ :eachQuestion | eachQuestion mainGroupName = 'QGS' ] ]
 			width: 120;
 		column: 'Tool Usage [%]'
-			evaluated: [ :line | line staticVsLiveToolUsage asFloat ]
-			width: 120;
+			evaluated: [ :line | line staticVsLiveToolUsage asFloat printShowingDecimalPlaces: 7 ]
+			width: 120
+			tags: {}
+			sortedBy: [ :a :b | a staticVsLiveToolUsage > b staticVsLiveToolUsage ];
 		column: 'Tool Usage'
 			evaluated: [ :line | TRATableSymbolToolUsageColumn new toolUsageForQuestion: line ]
 			width: 120;
