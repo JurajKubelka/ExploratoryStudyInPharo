@@ -37,4 +37,10 @@ questionsComplexityIn: composite node: aNode
 		column: 'QGS Children'
 			evaluated: [ :line | line generalAnyLevelSubQuestions count: [ :eachQuestion | eachQuestion mainGroupName = 'QGS' ] ]
 			width: 120;
+		column: 'Tool Usage [%]'
+			evaluated: [ :line | line staticVsLiveToolUsage asFloat ]
+			width: 120;
+		column: 'Tool Usage'
+			evaluated: [ :line | TRATableSymbolToolUsageColumn new toolUsageForQuestion: line ]
+			width: 120;
 		installExportToCSV.
