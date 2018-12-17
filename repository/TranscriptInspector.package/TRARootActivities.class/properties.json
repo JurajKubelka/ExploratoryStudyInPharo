@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OrderedCollection",
+	"category" : "TranscriptInspector-Root Activities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRARootActivities",
+	"type" : "normal"
+}

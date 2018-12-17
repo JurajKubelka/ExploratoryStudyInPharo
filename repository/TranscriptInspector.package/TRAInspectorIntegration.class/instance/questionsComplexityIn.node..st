@@ -45,4 +45,7 @@ questionsComplexityIn: composite node: aNode
 		column: 'Tool Usage'
 			evaluated: [ :line | TRATableSymbolToolUsageColumn new toolUsageForQuestion: line ]
 			width: 120;
+		column: 'Duration'
+			evaluated: [ :line | line duration asSeconds ]
+			width: 120;
 		installExportToCSV.
