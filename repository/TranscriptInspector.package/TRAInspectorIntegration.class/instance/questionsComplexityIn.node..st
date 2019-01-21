@@ -49,19 +49,21 @@ questionsComplexityIn: composite node: aNode
 			evaluated: [ :line | line duration asSeconds ]
 			width: 120;
 		column: 'Dynamic Tool Usage [seconds]'
-			evaluated: [ :line | (line duration * line staticVsLiveToolUsage) asRoundedSeconds  ]
+			evaluated: [ :line | (line duration * line staticVsLiveToolUsage) 
+				asFloatSeconds printShowingDecimalPlaces: 7 ]
 			width: 120;
 		column: 'Static Tool Usage [seconds]'
-			evaluated: [ :line | (line duration - (line duration * line staticVsLiveToolUsage)) asRoundedSeconds ]
+			evaluated: [ :line | (line duration - (line duration * line staticVsLiveToolUsage)) 
+				asFloatSeconds printShowingDecimalPlaces: 7 ]
 			width: 120;
 		column: 'Start [seconds]'
-			evaluated: [ :line | line start asDuration asRoundedSeconds ]
+			evaluated: [ :line | line start asDuration asFloatSeconds printShowingDecimalPlaces: 7 ]
 			width: 120;
 		column: 'Start [%]'
 			evaluated: [ :line | (line start asDuration / line sessionHeading sessionDurationBasedOnTranscript)
 				asFloat printShowingDecimalPlaces: 7 ]
 			width: 120;
 		column: 'Session Duration [seconds]'
-			evaluated: [ :line | line sessionHeading sessionDurationBasedOnTranscript asRoundedSeconds ]
+			evaluated: [ :line | line sessionHeading sessionDurationBasedOnTranscript asFloatSeconds printShowingDecimalPlaces: 7 ]
 			width: 120;
 		installExportToCSV.
