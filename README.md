@@ -1,13 +1,14 @@
 # Exploratory Study in Pharo [![Build Status](https://travis-ci.org/JurajKubelka/ExploratoryStudyInPharo.svg?branch=master)](https://travis-ci.org/JurajKubelka/ExploratoryStudyInPharo)
 
-## Introduction
+This repository includes a set of analytical tools that were used to analyze a dataset in research studies published in the following venues:
 
-This repository includes a set of analytical tools that were used to analyze a dataset in the corresponding paper "The Road to Live Programming: Insights From the Practice."
+- Title: *The Road to Live Programming: Insights From the Practice*
+- Authors: Juraj Kubelka, Romain Robbes, Alexandre Bergel
+- [ICSE 2018](https://www.icse2018.org/event/icse-2018-technical-papers-the-road-to-live-programming-insights-from-the-practice)
 
-Abstract: Live Programming environments allow programmers to get feedback instantly while changing software. Liveness is gaining attention among industrial and open-source communities; several IDEs offer high degrees of liveness.
-While several studies looked at how programmers work during software evolution tasks, none of them consider live environments. We conduct such a study based on an analysis of 17 programming sessions of practitioners using Pharo, a mature Live Programming environment. The study is complemented by a survey and subsequent analysis of 16 programming sessions in additional languages, e.g., JavaScript. We document the approaches taken by developers during their work. We find that some liveness features are extensively used, and have an impact on the way developers navigate source code and objects in their work.
-
-The paper analyze two datasets: a transcript text file and a user interaction data. The transcript is available at: Juraj Kubelka, Romain Robbes, and Alexandre Bergel. (2018). Dataset for The Road to Live Programming: Insights From the Practice (Version v1.0-pre) [Data set]. Link: http://doi.org/10.5281/zenodo.1156932. The user interaction data are available as an extract in the same publication.
+Title: *Live Programming and Software Evolution: Questions during a Programming Change Task*
+- Authors: Juraj Kubelka, Romain Robbes, Alexandre Bergel
+- [ICPC 2019](https://conf.researchr.org/home/icpc-2019)
 
 ## Installation 
 
@@ -43,4 +44,3 @@ Note: The collected data are not currently available for public use.
 ## Notes
 
 Original source code is in [SmalltalkHub](http://www.smalltalkhub.com/#!/~JurajKubelka/ExploratoryStudyInPharo/).
-
